@@ -1,7 +1,7 @@
 const PLANS = {
-    monthly: { price: 990, name: 'Cyber Security PRO - Месяц', code: 'CS-PRO-MONTH' },
-    yearly: { price: 4990, name: 'Cyber Security PRO - Год', code: 'CS-PRO-YEAR' },
-    lifetime: { price: 9990, name: 'Cyber Security PRO - Навсегда', code: 'CS-PRO-LIFE' },
+    monthly: { price: 1990, name: 'Cyber Security PRO - Месяц', code: 'CS-PRO-MONTH' },
+    yearly: { price: 7990, name: 'Cyber Security PRO - Год', code: 'CS-PRO-YEAR' },
+    lifetime: { price: 14990, name: 'Cyber Security PRO - Навсегда', code: 'CS-PRO-LIFE' },
 };
 
 let currentPlan = null;
