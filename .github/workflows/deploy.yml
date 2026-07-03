@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy with Secrets
 
 on:
   push:
@@ -35,6 +35,7 @@ jobs:
           sed -i "s|{{MESSAGE_SERVER_URL}}|${{ secrets.MESSAGE_SERVER_URL }}|g" api/send-message.php
           sed -i "s|{{SECRET_TOKEN}}|${{ secrets.SECRET_TOKEN }}|g" api/send-message.php
         fi
+        echo "Secrets replaced successfully"
         
     - name: Setup Pages
       uses: actions/configure-pages@v4
