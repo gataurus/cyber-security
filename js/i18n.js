@@ -72,6 +72,9 @@ const I18n = {
         if (currentBtn && this.languages[lang]) {
             currentBtn.textContent = this.languages[lang].flag + ' ' + this.languages[lang].name;
         }
+        
+        // Закрываем выпадающее окно
+        this.closeDropdown();
     },
     
     renderSwitcher: function() {
@@ -89,7 +92,7 @@ const I18n = {
         for (let code in this.languages) {
             const lang = this.languages[code];
             const active = code === this.current ? ' active' : '';
-            html += '<div class="lang-option' + active + '" data-lang="' + code + '" onclick="I18n.setLanguage(\'' + code + '\')">';
+            html += '<div class="lang-option' + active + '" data-lang="' + code + '" onclick="I18n.selectLanguage(\'' + code + '\')">';
             html += '<span class="lang-flag">' + lang.flag + '</span>';
             html += '<span class="lang-name">' + lang.name + '</span>';
             html += '</div>';
@@ -99,22 +102,43 @@ const I18n = {
         container.innerHTML = html;
     },
     
+    selectLanguage: function(lang) {
+        this.setLanguage(lang);
+    },
+    
     toggleSwitcher: function() {
         const dropdown = document.getElementById('lang-dropdown');
+        const currentBtn = document.querySelector('.lang-current');
         if (dropdown) {
             const isOpen = dropdown.style.display === 'block';
-            dropdown.style.display = isOpen ? 'none' : 'block';
-            document.querySelector('.lang-current').classList.toggle('open', !isOpen);
+            if (isOpen) {
+                this.closeDropdown();
+            } else {
+                dropdown.style.display = 'block';
+                if (currentBtn) currentBtn.classList.add('open');
+            }
         }
+    },
+    
+    closeDropdown: function() {
+        const dropdown = document.getElementById('lang-dropdown');
+        const currentBtn = document.querySelector('.lang-current');
+        if (dropdown) dropdown.style.display = 'none';
+        if (currentBtn) currentBtn.classList.remove('open');
     }
 };
 
 // Закрывать при клике вне
 document.addEventListener('click', function(e) {
     if (!e.target.closest('#lang-switcher')) {
-        const dropdown = document.getElementById('lang-dropdown');
-        if (dropdown) dropdown.style.display = 'none';
-        document.querySelector('.lang-current')?.classList.remove('open');
+        I18n.closeDropdown();
+    }
+});
+
+// Закрывать по Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        I18n.closeDropdown();
     }
 });
 
