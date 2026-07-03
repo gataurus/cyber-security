@@ -46,16 +46,16 @@
 <section class="threats">
     <div class="container">
         <h2 class="section-title" data-i18n="threats_title">От каких угроз защищает Cyber Security</h2>
-        <p class="section-subtitle" data-i18n="threats_subtitle">Ваш WordPress-сайт атакуют каждый день — боты, сканеры, хакеры. Плагин блокирует угрозы автоматически.</p>
+        <p class="section-subtitle" data-i18n="threats_subtitle">Ваш WordPress-сайт атакуют каждый день — боты, сканеры, хакеры. Плагин блокирует угрозы автоматически, без вашего участия.</p>
         <div class="threats-grid">
-            <div class="threat-card"><div class="threat-icon">🤖</div><h3 data-i18n="threat1_title">Боты и сканеры</h3><p data-i18n="threat1_desc">Автоматические программы сканируют сайты 24/7. Плагин определяет их по User-Agent и поведению.</p></div>
-            <div class="threat-card"><div class="threat-icon">🔑</div><h3 data-i18n="threat2_title">Брутфорс-атаки</h3><p data-i18n="threat2_desc">Хакеры перебирают тысячи паролей в минуту. Плагин блокирует всю подсеть /24 навсегда.</p></div>
-            <div class="threat-card"><div class="threat-icon">🧠</div><h3 data-i18n="threat3_title">AI-скрапинг контента</h3><p data-i18n="threat3_desc">GPTBot, Claude, PerplexityBot собирают ваш контент. Блокируются без вреда для поисковиков.</p></div>
-            <div class="threat-card"><div class="threat-icon">☠️</div><h3 data-i18n="threat4_title">SQL-инъекции и XSS</h3><p data-i18n="threat4_desc">Внедрение вредоносного кода через URL и формы. Все запросы проверяются.</p></div>
-            <div class="threat-card"><div class="threat-icon">🌊</div><h3 data-i18n="threat5_title">DDoS-атаки и флуд</h3><p data-i18n="threat5_desc">Массовые запросы перегружают сервер. Три уровня защиты.</p></div>
-            <div class="threat-card"><div class="threat-icon">📋</div><h3 data-i18n="threat6_title">Кража контента</h3><p data-i18n="threat6_desc">Защита от выделения, правого клика, горячих клавиш и iframe.</p></div>
-            <div class="threat-card"><div class="threat-icon">🕵️</div><h3 data-i18n="threat7_title">Скрытые вредоносные файлы</h3><p data-i18n="threat7_desc">Вирусы маскируются под легитимные файлы. Ежедневный сканер.</p></div>
-            <div class="threat-card"><div class="threat-icon">🔓</div><h3 data-i18n="threat8_title">Утечка данных WordPress</h3><p data-i18n="threat8_desc">WordPress раскрывает версию, пользователей, плагины. Системные файлы скрываются.</p></div>
+            <div class="threat-card"><div class="threat-icon">🤖</div><h3 data-i18n="threat1_title">Боты и сканеры уязвимостей</h3><p data-i18n="threat1_desc">Автоматические программы круглосуточно сканируют сайты в поисках уязвимых мест: wp-login.php, xmlrpc.php, .env, .git, wp-config.php. Плагин определяет их по User-Agent, HTTP-заголовкам и поведению — и блокирует до того, как они доберутся до файлов.</p></div>
+            <div class="threat-card"><div class="threat-icon">🔑</div><h3 data-i18n="threat2_title">Брутфорс-атаки (подбор паролей)</h3><p data-i18n="threat2_desc">Хакеры перебирают тысячи паролей в минуту к wp-login.php и XML-RPC. Плагин отслеживает попытки входа и при превышении лимита навсегда блокирует всю подсеть /24 нарушителя.</p></div>
+            <div class="threat-card"><div class="threat-icon">🧠</div><h3 data-i18n="threat3_title">AI-скрапинг контента</h3><p data-i18n="threat3_desc">GPTBot (OpenAI), Claude (Anthropic), PerplexityBot, Google-Extended, Bytespider и другие AI-боты собирают ваш контент для обучения моделей. Плагин распознаёт и блокирует их, не затрагивая легитимные поисковые системы.</p></div>
+            <div class="threat-card"><div class="threat-icon">☠️</div><h3 data-i18n="threat4_title">SQL-инъекции и XSS-атаки</h3><p data-i18n="threat4_desc">Злоумышленники пытаются внедрить вредоносный код через URL-параметры и формы. Плагин проверяет все входящие запросы на паттерны SQL-инъекций и межсайтового скриптинга, блокируя атаку до обработки WordPress.</p></div>
+            <div class="threat-card"><div class="threat-icon">🌊</div><h3 data-i18n="threat5_title">DDoS-атаки и флуд</h3><p data-i18n="threat5_desc">Массовые запросы перегружают сервер и кладут сайт. Три уровня защиты: Rate Limiting (ограничение запросов), DDoS Protection (продвинутая защита) и Anti-Slowloris (блокировка медленных соединений).</p></div>
+            <div class="threat-card"><div class="threat-icon">📋</div><h3 data-i18n="threat6_title">Кража контента</h3><p data-i18n="threat6_desc">Ваши статьи, изображения и код воруют конкуренты и автоматические парсеры. Защита от выделения текста, правого клика, горячих клавиш (Ctrl+C, Ctrl+U), перетаскивания изображений и встраивания в iframe.</p></div>
+            <div class="threat-card"><div class="threat-icon">🕵️</div><h3 data-i18n="threat7_title">Скрытые вредоносные файлы</h3><p data-i18n="threat7_desc">Вирусы и бэкдоры маскируются под легитимные файлы. Сканер вредоносного кода ежедневно проверяет PHP, JS, INC и TXT файлы, находит скрытые файлы, eval-вставки и base64-декодеры.</p></div>
+            <div class="threat-card"><div class="threat-icon">🔓</div><h3 data-i18n="threat8_title">Утечка данных WordPress</h3><p data-i18n="threat8_desc">Стандартный WordPress раскрывает версию, имена пользователей, список плагинов и тем. Плагин скрывает системные файлы, убирает версию из HTML и URL скриптов, блокирует прямое перечисление пользователей через REST API.</p></div>
         </div>
     </div>
 </section>
@@ -64,7 +64,7 @@
 <section class="comparison" id="comparison">
     <div class="container">
         <h2 class="section-title" data-i18n="compare_title">Сравнение версий</h2>
-        <p class="section-subtitle" data-i18n="compare_subtitle">Free-версия — мощная базовая защита. PRO добавляет продвинутые функции для максимальной безопасности.</p>
+        <p class="section-subtitle" data-i18n="compare_subtitle">Free-версия — мощная базовая защита, которой хватит большинству сайтов. PRO добавляет продвинутые функции для максимальной безопасности.</p>
         <div class="comparison-table-wrap">
             <table class="comparison-table">
                 <thead><tr><th>Функция</th><th class="col-free" data-i18n="col_free">🆓 Free</th><th class="col-pro" data-i18n="col_pro">🛡️ PRO</th></tr></thead>
@@ -72,30 +72,34 @@
                     <tr><td data-i18n="table_bot_ua">Блокировка ботов по User-Agent</td><td>✅</td><td>✅</td></tr>
                     <tr><td data-i18n="table_http10">Блокировка HTTP/1.0 сканеров</td><td>✅</td><td>✅</td></tr>
                     <tr><td data-i18n="table_headers">Проверка подозрительных заголовков</td><td>✅</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_brute">Брутфорс-защита</td><td>✅</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_hide_wp">Скрытие системных файлов</td><td>✅</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_rate_limit">Rate Limiting</td><td>✅</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_whitelist">Белый список IP</td><td>✅</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_backups">Бэкапы базы данных</td><td>✅</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_alerts">Email-уведомления</td><td>✅</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_log_cleanup">Автоочистка логов</td><td>✅</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_brute">Брутфорс-защита (wp-login, XML-RPC)</td><td>✅</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_hide_wp">Скрытие системных файлов WordPress</td><td>✅</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_rate_limit">Rate Limiting (флуд-контроль)</td><td>✅</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_whitelist">Белый список IP (ручной + авто)</td><td>✅</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_backups">Бэкапы базы данных (локально)</td><td>✅</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_alerts">Email-уведомления об атаках</td><td>✅</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_log_cleanup">Автоматическая очистка логов</td><td>✅</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_dashboard">Виджет безопасности в админке</td><td>✅</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_test">Автоматический тест защиты (20 тестов)</td><td>✅</td><td>✅</td></tr>
                     <tr class="divider"><td colspan="3" data-i18n="divider_pro">🔓 PRO-функции</td></tr>
-                    <tr><td data-i18n="table_behavioral">Поведенческий анализ</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_turnstile">Cloudflare Turnstile</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_2fa">Двухфакторная аутентификация</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_ddos">DDoS-защита</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_geo">Гео-блокировка</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_content">Защита контента</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_ai">AI-скрапинг защита</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_integrity">Мониторинг файлов</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_cloud">Облачные бэкапы</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_malware">Сканер вредоносного кода</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_sql">Защита от SQL-инъекций</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_report">Еженедельный отчёт</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_api">REST API Rate Limiting</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_filesystem">Защита файловой системы</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_threat">Threat Intelligence</td><td>❌</td><td>✅</td></tr>
-                    <tr><td data-i18n="table_encrypt">Шифрование бэкапов</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_behavioral">🧠 Поведенческий анализ посетителей</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_turnstile">☁️ Cloudflare Turnstile (умная капча)</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_2fa">🔐 Двухфакторная аутентификация (2FA)</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_ddos">🛡️ DDoS-защита (продвинутая)</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_geo">🌍 Гео-блокировка по странам</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_content">📝 Защита контента от копирования</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_ai">🤖 Защита от AI-скрапинга</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_integrity">📊 Мониторинг целостности файлов</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_cloud">💾 Облачные бэкапы (Google Drive, Яндекс.Диск, Dropbox)</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_malware">🔍 Сканер вредоносного кода</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_sql">🚫 Расширенная защита от SQL-инъекций</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_report">📧 Еженедельный отчёт безопасности</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_api">🔌 REST API Rate Limiting</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_filesystem">💾 Защита файловой системы</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_threat">🛡️ Threat Intelligence (глобальная база угроз)</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_encrypt">🔒 Шифрование бэкапов паролем</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_csp">🛡️ Content Security Policy (CSP)</td><td>❌</td><td>✅</td></tr>
+                    <tr><td data-i18n="table_https">🔒 Принудительный HTTPS</td><td>❌</td><td>✅</td></tr>
                 </tbody>
             </table>
         </div>
@@ -106,18 +110,18 @@
 <section class="pro-features">
     <div class="container">
         <h2 class="section-title" data-i18n="pro_features_title">PRO-функции подробно</h2>
-        <p class="section-subtitle" data-i18n="pro_features_subtitle">Каждая функция разработана на основе анализа реальных атак.</p>
+        <p class="section-subtitle" data-i18n="pro_features_subtitle">Каждая функция разработана на основе анализа реальных атак на WordPress-сайты.</p>
         <div class="pro-features-grid">
-            <div class="pro-feature-card"><h3 data-i18n="pro1_title">Поведенческий анализ</h3><p data-i18n="pro1_desc">Обнаруживает ботов, маскирующихся под реальные браузеры.</p></div>
-            <div class="pro-feature-card"><h3 data-i18n="pro2_title">Cloudflare Turnstile</h3><p data-i18n="pro2_desc">Умная проверка без капчи в 90% случаев. Бесплатно до 1 млн/мес.</p></div>
-            <div class="pro-feature-card"><h3 data-i18n="pro3_title">Двухфакторная аутентификация</h3><p data-i18n="pro3_desc">Google Authenticator, Authy, Microsoft Authenticator.</p></div>
-            <div class="pro-feature-card"><h3 data-i18n="pro4_title">Гео-блокировка</h3><p data-i18n="pro4_desc">Блокировка по странам. Чёрный и белый список. 195 стран.</p></div>
-            <div class="pro-feature-card"><h3 data-i18n="pro5_title">Защита контента</h3><p data-i18n="pro5_desc">Запрет выделения, правого клика, горячих клавиш.</p></div>
-            <div class="pro-feature-card"><h3 data-i18n="pro6_title">Облачные бэкапы</h3><p data-i18n="pro6_desc">Google Drive, Яндекс.Диск, Dropbox. Шифрование AES-256.</p></div>
-            <div class="pro-feature-card"><h3 data-i18n="pro7_title">Сканер вредоносного кода</h3><p data-i18n="pro7_desc">Ежедневная проверка PHP, JS, INC, TXT.</p></div>
-            <div class="pro-feature-card"><h3 data-i18n="pro8_title">DDoS-защита</h3><p data-i18n="pro8_desc">Три уровня защиты. Anti-Slowloris.</p></div>
-            <div class="pro-feature-card"><h3 data-i18n="pro9_title">Threat Intelligence</h3><p data-i18n="pro9_desc">Глобальная база вредоносных IP из 4 источников.</p></div>
-            <div class="pro-feature-card"><h3 data-i18n="pro10_title">Мониторинг файлов</h3><p data-i18n="pro10_desc">Проверка критических файлов каждые 6 часов.</p></div>
+            <div class="pro-feature-card"><h3 data-i18n="pro1_title">🧠 Поведенческий анализ посетителей</h3><p data-i18n="pro1_desc">Эвристический анализ поведения на сайте. Обнаруживает ботов, которые маскируются под реальные браузеры: правильный User-Agent, все заголовки — но ведут себя неестественно. Анализирует скорость переходов, последовательность URL, соотношение GET/POST запросов. Настраиваемый порог срабатывания.</p></div>
+            <div class="pro-feature-card"><h3 data-i18n="pro2_title">☁️ Cloudflare Turnstile</h3><p data-i18n="pro2_desc">Умная проверка «человек или бот» от Cloudflare. В 90% случаев не показывает капчу реальным людям. Бесплатно до 1 000 000 проверок в месяц. Не требует переноса домена на Cloudflare или смены DNS-серверов.</p></div>
+            <div class="pro-feature-card"><h3 data-i18n="pro3_title">🔐 Двухфакторная аутентификация (2FA)</h3><p data-i18n="pro3_desc">Дополнительный уровень защиты при входе в админку WordPress. Поддержка Google Authenticator, Authy, Microsoft Authenticator. Даже если пароль украден — без кода войти невозможно.</p></div>
+            <div class="pro-feature-card"><h3 data-i18n="pro4_title">🌍 Гео-блокировка</h3><p data-i18n="pro4_desc">Блокировка доступа к сайту из указанных стран на основе IP-геолокации. Чёрный и белый список. 195 стран в базе. Возможность редиректа.</p></div>
+            <div class="pro-feature-card"><h3 data-i18n="pro5_title">📝 Защита контента от копирования</h3><p data-i18n="pro5_desc">Запрет выделения текста, правого клика, горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12). Автоматическая ссылка на источник при копировании. Защита от iframe. Совместимость с плеерами через data-cs-allow.</p></div>
+            <div class="pro-feature-card"><h3 data-i18n="pro6_title">💾 Облачные бэкапы</h3><p data-i18n="pro6_desc">Автоматическая загрузка бэкапов базы данных в Google Drive, Яндекс.Диск, Dropbox. Отправка на email. Шифрование AES-256. Восстановление из облака.</p></div>
+            <div class="pro-feature-card"><h3 data-i18n="pro7_title">🔍 Сканер вредоносного кода</h3><p data-i18n="pro7_desc">Ежедневная проверка PHP, JS, INC, TXT файлов. Обнаруживает eval-вставки, base64-декодеры, скрытые файлы. Белый список файлов.</p></div>
+            <div class="pro-feature-card"><h3 data-i18n="pro8_title">🛡️ DDoS-защита и Anti-Slowloris</h3><p data-i18n="pro8_desc">Три уровня защиты на уровне приложения (Layer 7). Настраиваемые пороги. Блокировка медленных соединений.</p></div>
+            <div class="pro-feature-card"><h3 data-i18n="pro9_title">🛡️ Threat Intelligence</h3><p data-i18n="pro9_desc">Глобальная база вредоносных IP из 4 источников. Автообновление. Мгновенная блокировка подсети /24.</p></div>
+            <div class="pro-feature-card"><h3 data-i18n="pro10_title">📊 Мониторинг целостности файлов</h3><p data-i18n="pro10_desc">Проверка критических файлов WordPress каждые 6 часов. Уведомления при изменениях. Рекомендация восстановления из бэкапа.</p></div>
         </div>
     </div>
 </section>
@@ -126,7 +130,7 @@
 <section class="pricing-section" id="pricing">
     <div class="container">
         <h2 class="section-title" data-i18n="pricing_title">Тарифы</h2>
-        <p class="section-subtitle" data-i18n-html="pricing_subtitle">Оплата через защищённую платёжную систему. <strong>Проверьте папку «Спам»!</strong></p>
+        <p class="section-subtitle" data-i18n-html="pricing_subtitle">Оплата через защищённую платёжную систему. Лицензионный ключ приходит на email сразу после оплаты. <strong>Проверьте папку «Спам»</strong> — иногда письма попадают туда.</p>
         <div class="pricing">
             <div class="plan">
                 <div class="plan-name" data-i18n="plan_month">PRO Месяц</div>
@@ -134,8 +138,9 @@
                 <p class="plan-desc" data-i18n="plan_month_desc">Для тех, кто хочет попробовать</p>
                 <ul>
                     <li data-i18n="plan_feature1">✅ Все PRO-функции</li>
-                    <li data-i18n="plan_feature2">✅ Обновления плагина</li>
-                    <li data-i18n="plan_feature3">✅ Поддержка по email</li>
+                    <li data-i18n="plan_feature_updates">✅ Обновления плагина в течение 30 дней</li>
+                    <li data-i18n="plan_feature_support">✅ Поддержка по email</li>
+                    <li data-i18n="plan_feature_sites">✅ Активация на 1 сайте</li>
                 </ul>
                 <button onclick="buyPlan('monthly')" class="btn-buy" data-i18n="btn_buy">Купить</button>
             </div>
@@ -143,11 +148,12 @@
                 <div class="plan-badge" data-i18n="badge_popular">🔥 Популярный</div>
                 <div class="plan-name" data-i18n="plan_year">PRO Год</div>
                 <div class="plan-price">4 990₽<span>/год</span></div>
-                <p class="plan-desc" data-i18n="plan_year_desc">Экономия 58%</p>
+                <p class="plan-desc" data-i18n="plan_year_desc">Экономия 58% — выгоднее на 6 890₽</p>
                 <ul>
                     <li data-i18n="plan_feature1">✅ Все PRO-функции</li>
-                    <li data-i18n="plan_feature2">✅ Обновления плагина</li>
-                    <li data-i18n="plan_feature3">✅ Поддержка по email</li>
+                    <li data-i18n="plan_feature_updates_year">✅ Обновления плагина в течение 1 года</li>
+                    <li data-i18n="plan_feature_support">✅ Поддержка по email</li>
+                    <li data-i18n="plan_feature_sites_3">✅ Активация на 3 сайтах</li>
                 </ul>
                 <button onclick="buyPlan('yearly')" class="btn-buy" data-i18n="btn_buy">Купить</button>
             </div>
@@ -158,7 +164,8 @@
                 <ul>
                     <li data-i18n="plan_feature1">✅ Все PRO-функции</li>
                     <li data-i18n="plan_feature_lifetime">✅ Пожизненные обновления</li>
-                    <li data-i18n="plan_feature3">✅ Поддержка по email</li>
+                    <li data-i18n="plan_feature_support">✅ Поддержка по email</li>
+                    <li data-i18n="plan_feature_sites_10">✅ Активация на 10 сайтах</li>
                 </ul>
                 <button onclick="buyPlan('lifetime')" class="btn-buy" data-i18n="btn_buy">Купить</button>
             </div>
@@ -176,10 +183,10 @@
     <div class="container">
         <h2 class="section-title" data-i18n="how_title">Как активировать PRO</h2>
         <div class="steps">
-            <div class="step"><div class="step-number">1</div><h3 data-i18n="step1_title">Оплатите тариф</h3><p data-i18n="step1_desc">Выберите тариф и оплатите.</p></div>
-            <div class="step"><div class="step-number">2</div><h3 data-i18n="step2_title">Получите ключ</h3><p data-i18n-html="step2_desc">Ключ придёт на email. <strong>Проверьте «Спам»!</strong></p></div>
-            <div class="step"><div class="step-number">3</div><h3 data-i18n="step3_title">Вставьте ключ</h3><p data-i18n-html="step3_desc">В админке перейдите в <strong>Cyber Security</strong>.</p></div>
-            <div class="step"><div class="step-number">4</div><h3 data-i18n="step4_title">PRO активирован!</h3><p data-i18n="step4_desc">PRO-функции разблокируются мгновенно.</p></div>
+            <div class="step"><div class="step-number">1</div><h3 data-i18n="step1_title">Оплатите тариф</h3><p data-i18n="step1_desc">Выберите подходящий тариф и оплатите через Robokassa. Это безопасно и занимает меньше минуты.</p></div>
+            <div class="step"><div class="step-number">2</div><h3 data-i18n="step2_title">Получите ключ</h3><p data-i18n-html="step2_desc">Лицензионный ключ придёт на ваш email сразу после оплаты. <strong>Проверьте папку «Спам»!</strong></p></div>
+            <div class="step"><div class="step-number">3</div><h3 data-i18n="step3_title">Вставьте ключ</h3><p data-i18n-html="step3_desc">В админке WordPress перейдите в <strong>Cyber Security</strong> и вставьте ключ в поле активации.</p></div>
+            <div class="step"><div class="step-number">4</div><h3 data-i18n="step4_title">PRO активирован!</h3><p data-i18n="step4_desc">Все PRO-функции разблокируются мгновенно. Ничего дополнительно настраивать не нужно.</p></div>
         </div>
     </div>
 </section>
@@ -188,13 +195,56 @@
 <section class="faq">
     <div class="container">
         <h2 class="section-title" data-i18n="faq_title">Частые вопросы</h2>
-        <div class="faq-item"><h3 data-i18n="faq1_q">Как установить плагин?</h3><p data-i18n="faq1_a">Установите бесплатную версию из WordPress.org, купите PRO, активируйте ключ.</p></div>
-        <div class="faq-item"><h3 data-i18n="faq2_q">Не пришло письмо?</h3><p data-i18n-html="faq2_a"><strong>Проверьте «Спам»!</strong> Если нет — напишите на cybersecurity.plugin@gmail.com.</p></div>
-        <div class="faq-item"><h3 data-i18n="faq3_q">Что после окончания?</h3><p data-i18n-html="faq3_a">PRO отключится, но <strong>базовая защита продолжит работать</strong>.</p></div>
-        <div class="faq-item"><h3 data-i18n="faq4_q">Несколько сайтов?</h3><p data-i18n="faq4_a">Одна лицензия — один сайт.</p></div>
-        <div class="faq-item"><h3 data-i18n="faq5_q">Нужен ли Cloudflare?</h3><p data-i18n="faq5_a">Нет. Turnstile работает независимо.</p></div>
-        <div class="faq-item"><h3 data-i18n="faq6_q">Замедляет ли сайт?</h3><p data-i18n="faq6_a">Нет. Проверки за миллисекунды.</p></div>
-        <div class="faq-item"><h3 data-i18n="faq7_q">Как удалить?</h3><p data-i18n="faq7_a">При удалении плагин очищает все данные.</p></div>
+        
+        <div class="faq-item">
+            <h3 data-i18n="faq1_q">❓ Как установить плагин?</h3>
+            <p data-i18n="faq1_a">Установите бесплатную версию Cyber Security из репозитория WordPress.org (Плагины → Добавить новый → поиск «Cyber Security»). Затем купите PRO-лицензию на этом сайте, активируйте ключ в настройках плагина — и PRO-функции разблокируются мгновенно. Никаких дополнительных установок не требуется.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 data-i18n="faq2_q">📧 Не пришло письмо с лицензией. Что делать?</h3>
+            <p data-i18n-html="faq2_a"><strong>Первым делом проверьте папку «Спам» (Spam) в вашей почте!</strong> Письма часто попадают туда, особенно при первой покупке. Если письма нет ни в одной папке — напишите на <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a> с email, который использовали при покупке. Мы найдём ваш ключ в базе и отправим повторно.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 data-i18n="faq3_q">🔄 Что будет после окончания лицензии?</h3>
+            <p data-i18n-html="faq3_a">PRO-функции отключатся, но <strong>базовая защита продолжит работать</strong>. Ваш сайт не останется без защиты. Все ваши настройки, белый список IP, логи и бэкапы сохранятся. Вы можете продлить лицензию в любой момент — все PRO-функции снова активируются без потери данных.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 data-i18n="faq4_q">🌐 Можно ли использовать на нескольких сайтах?</h3>
+            <p data-i18n="faq4_a">Да, количество сайтов зависит от тарифа: Месяц — 1 сайт, Год — 3 сайта, Навсегда — 10 сайтов. Для каждого сайта требуется отдельная активация лицензионным ключом. Если вам нужно больше сайтов — приобретите дополнительные лицензии.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 data-i18n="faq5_q">☁️ Нужен ли Cloudflare для Turnstile?</h3>
+            <p data-i18n="faq5_a">Нет. Cloudflare Turnstile работает полностью независимо. Не нужно переносить домен на Cloudflare или менять DNS-серверы. Достаточно бесплатно зарегистрироваться на cloudflare.com, получить Site Key и Secret Key, и вставить их в настройки плагина. Бесплатно до 1 000 000 проверок в месяц.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 data-i18n="faq6_q">🔒 Замедляет ли плагин сайт?</h3>
+            <p data-i18n="faq6_a">Нет. Плагин работает на уровне HTTP-заголовков и IP-адресов — до загрузки WordPress. Проверки происходят за миллисекунды. Результаты кэшируются, исключая повторные проверки для одного IP. На сайте с посещаемостью 100 000+ в месяц нагрузка от плагина незаметна.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 data-i18n="faq7_q">🗑 Как удалить плагин?</h3>
+            <p data-i18n="faq7_a">При удалении через админку WordPress плагин автоматически очищает все свои данные: логи, бэкапы, настройки, списки блокировок. Никаких следов не остаётся. Если хотите сохранить бэкапы — скачайте их перед удалением.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 data-i18n="faq8_q">💳 Какие способы оплаты?</h3>
+            <p data-i18n="faq8_a">Мы принимаем банковские карты Visa, MasterCard и МИР, а также платежи через Систему быстрых платежей (СБП). Все платежи обрабатываются через защищённую платёжную систему. Платёжные данные не хранятся на наших серверах.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 data-i18n="faq9_q">🛡️ Конфликтует ли плагин с другими?</h3>
+            <p data-i18n="faq9_a">Плагин спроектирован так, чтобы не конфликтовать с другими плагинами безопасности. Он работает на уровне HTTP-заголовков, до загрузки WordPress. Однако не рекомендуется использовать одновременно несколько плагинов с функциями Rate Limiting или файрвола — это может привести к двойной блокировке.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 data-i18n="faq10_q">🔄 Как перенести лицензию на другой домен?</h3>
+            <p data-i18n-html="faq10_a">Напишите на <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a> с указанием старого и нового домена. Мы деактивируем лицензию на старом домене и вы сможете активировать её на новом. Перенос доступен для всех тарифов.</p>
+        </div>
     </div>
 </section>
 
@@ -219,7 +269,7 @@
 <div id="email-modal" class="modal" style="display:none;">
     <div class="modal-content">
         <h2 data-i18n="modal_title">Введите email для получения ключа</h2>
-        <p data-i18n-html="modal_desc"><strong>Проверьте папку «Спам»!</strong></p>
+        <p data-i18n-html="modal_desc">Лицензионный ключ будет отправлен на этот адрес сразу после оплаты. <strong>Проверьте папку «Спам»!</strong></p>
         <input type="email" id="email-input" data-i18n-placeholder="modal_placeholder" placeholder="your@email.com" required>
         <p id="email-error" style="color:#ff4040;display:none;" data-i18n="modal_error">Введите корректный email</p>
         <button onclick="confirmEmail()" class="btn-buy" data-i18n="modal_continue">Продолжить</button>
