@@ -132,44 +132,46 @@
         <h2 class="section-title" data-i18n="pricing_title">Тарифы</h2>
         <p class="section-subtitle" data-i18n-html="pricing_subtitle">Оплата через защищённую платёжную систему. Лицензионный ключ приходит на email сразу после оплаты. <strong>Проверьте папку «Спам»</strong> — иногда письма попадают туда.</p>
         <div class="pricing">
-            <div class="plan">
-                <div class="plan-name" data-i18n="plan_month">PRO Месяц</div>
-                <div class="plan-price">990₽<span>/мес</span></div>
-                <p class="plan-desc" data-i18n="plan_month_desc">Для тех, кто хочет попробовать</p>
-                <ul>
-                    <li data-i18n="plan_feature1">✅ Все PRO-функции</li>
-                    <li data-i18n="plan_feature_updates">✅ Обновления плагина в течение 30 дней</li>
-                    <li data-i18n="plan_feature_support">✅ Поддержка по email</li>
-                    <li data-i18n="plan_feature_sites">✅ Активация на 1 сайте</li>
-                </ul>
-                <button onclick="buyPlan('monthly')" class="btn-buy" data-i18n="btn_buy">Купить</button>
-            </div>
-            <div class="plan featured">
-                <div class="plan-badge" data-i18n="badge_popular">🔥 Популярный</div>
-                <div class="plan-name" data-i18n="plan_year">PRO Год</div>
-                <div class="plan-price">4 990₽<span>/год</span></div>
-                <p class="plan-desc" data-i18n="plan_year_desc">Экономия 58% — выгоднее на 6 890₽</p>
-                <ul>
-                    <li data-i18n="plan_feature1">✅ Все PRO-функции</li>
-                    <li data-i18n="plan_feature_updates_year">✅ Обновления плагина в течение 1 года</li>
-                    <li data-i18n="plan_feature_support">✅ Поддержка по email</li>
-                    <li data-i18n="plan_feature_sites_3">✅ Активация на 3 сайтах</li>
-                </ul>
-                <button onclick="buyPlan('yearly')" class="btn-buy" data-i18n="btn_buy">Купить</button>
-            </div>
-            <div class="plan">
-                <div class="plan-name" data-i18n="plan_lifetime">PRO Навсегда</div>
-                <div class="plan-price">14 990₽</div>
-                <p class="plan-desc" data-i18n="plan_lifetime_desc">Один раз — навсегда</p>
-                <ul>
-                    <li data-i18n="plan_feature1">✅ Все PRO-функции</li>
-                    <li data-i18n="plan_feature_lifetime">✅ Пожизненные обновления</li>
-                    <li data-i18n="plan_feature_support">✅ Поддержка по email</li>
-                    <li data-i18n="plan_feature_sites_10">✅ Активация на 10 сайтах</li>
-                </ul>
-                <button onclick="buyPlan('lifetime')" class="btn-buy" data-i18n="btn_buy">Купить</button>
-            </div>
-        </div>
+    <div class="plan">
+        <div class="plan-name" data-i18n="plan_month">PRO Месяц</div>
+        <div class="plan-price" data-i18n="plan_price_monthly">990₽<span data-i18n="plan_price_monthly_period">/мес</span></div>
+        <p class="plan-desc" data-i18n="plan_month_desc">Для тех, кто хочет попробовать</p>
+        <ul>
+            <li data-i18n="plan_feature1">✅ Все PRO-функции</li>
+            <li data-i18n="plan_feature_updates">✅ Обновления плагина в течение 30 дней</li>
+            <li data-i18n="plan_feature_support">✅ Поддержка по email</li>
+            <li data-i18n="plan_feature_sites">✅ Активация на 1 сайте</li>
+        </ul>
+        <button onclick="buyPlan('monthly')" class="btn-buy" data-i18n="btn_buy">Купить</button>
+    </div>
+    
+    <div class="plan featured">
+        <div class="plan-badge" data-i18n="badge_popular">🔥 Популярный</div>
+        <div class="plan-name" data-i18n="plan_year">PRO Год</div>
+        <div class="plan-price" data-i18n="plan_price_yearly">4 990₽<span data-i18n="plan_price_yearly_period">/год</span></div>
+        <p class="plan-desc" data-i18n="plan_year_desc">Экономия 58% — выгоднее на 6 890₽</p>
+        <ul>
+            <li data-i18n="plan_feature1">✅ Все PRO-функции</li>
+            <li data-i18n="plan_feature_updates_year">✅ Обновления плагина в течение 1 года</li>
+            <li data-i18n="plan_feature_support">✅ Поддержка по email</li>
+            <li data-i18n="plan_feature_sites_3">✅ Активация на 3 сайтах</li>
+        </ul>
+        <button onclick="buyPlan('yearly')" class="btn-buy" data-i18n="btn_buy">Купить</button>
+    </div>
+    
+    <div class="plan">
+        <div class="plan-name" data-i18n="plan_lifetime">PRO Навсегда</div>
+        <div class="plan-price" data-i18n="plan_price_lifetime">14 990₽</div>
+        <p class="plan-desc" data-i18n="plan_lifetime_desc">Один раз — навсегда</p>
+        <ul>
+            <li data-i18n="plan_feature1">✅ Все PRO-функции</li>
+            <li data-i18n="plan_feature_lifetime">✅ Пожизненные обновления</li>
+            <li data-i18n="plan_feature_support">✅ Поддержка по email</li>
+            <li data-i18n="plan_feature_sites_10">✅ Активация на 10 сайтах</li>
+        </ul>
+        <button onclick="buyPlan('lifetime')" class="btn-buy" data-i18n="btn_buy">Купить</button>
+    </div>
+</div>
         <div class="payment-methods">
             <span data-i18n="payment_methods">Принимаем к оплате:</span>
             <span class="payment-icon">💳</span> <span data-i18n="payment_cards">Банковские карты (Visa, MasterCard, МИР)</span>
