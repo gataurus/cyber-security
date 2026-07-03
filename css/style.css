@@ -124,6 +124,11 @@ body {
 .plan-name { font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
 .plan-price { font-size: 2.5rem; font-weight: 900; color: var(--green); margin-bottom: 8px; }
 .plan-price span { font-size: 0.9rem; color: var(--text-secondary); font-weight: 400; }
+.plan-price span:last-child {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
 .plan-desc { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; }
 .plan ul { list-style: none; text-align: left; margin-bottom: 25px; flex-grow: 1; }
 .plan li { padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; border-bottom: 1px solid var(--border-light); }
