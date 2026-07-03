@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="terms_title">Публичная оферта | Cyber Security PRO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/translations.js"></script>
+    <style>
+        .doc-page { max-width: 800px; margin: 60px auto; padding: 40px; }
+        .doc-page h1 { color: var(--green); margin-bottom: 30px; font-size: 2rem; }
+        .doc-page h2 { color: #fff; margin: 30px 0 15px; font-size: 1.3rem; }
+        .doc-page p, .doc-page li, .doc-page ol { color: var(--text-secondary); margin-bottom: 12px; font-size: 0.95rem; line-height: 1.7; }
+        .doc-page a { color: var(--green); }
+        .doc-page strong { color: #fff; }
+        .back-link { display: inline-block; margin-top: 40px; color: var(--green); text-decoration: none; font-weight: 600; }
+        .back-link:hover { text-decoration: underline; }
+        .lang-switcher { position: fixed; top: 16px; right: 16px; z-index: 100; font-size: 0.8rem; }
+        .lang-current { display: flex; align-items: center; gap: 8px; background: var(--bg-card); border: 1px solid var(--border); padding: 8px 14px; border-radius: var(--radius-sm); cursor: pointer; color: var(--text); font-weight: 600; white-space: nowrap; transition: all 0.2s; user-select: none; }
+        .lang-current:hover { border-color: var(--green); }
+        .lang-current.open { border-color: var(--green); box-shadow: 0 0 12px var(--green-glow); }
+        .lang-current span { font-size: 0.85rem; }
+        .lang-arrow { transition: transform 0.2s; color: var(--text-secondary); }
+        .lang-current.open .lang-arrow { transform: rotate(180deg); }
+        .lang-dropdown { position: absolute; top: calc(100% + 4px); right: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); min-width: 180px; max-height: 320px; overflow-y: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); animation: fadeIn 0.15s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+        .lang-option { display: flex; align-items: center; gap: 10px; padding: 10px 16px; cursor: pointer; color: var(--text-secondary); font-size: 0.85rem; transition: all 0.15s; }
+        .lang-option:hover { background: rgba(0, 224, 72, 0.05); color: var(--text); }
+        .lang-option.active { color: var(--green); font-weight: 700; background: rgba(0, 224, 72, 0.08); }
+    </style>
+</head>
+<body>
+
+<div id="lang-switcher" class="lang-switcher"></div>
+
+<div class="doc-page">
+    <h1 data-i18n="terms_title">Публичная оферта</h1>
+    <p data-i18n="terms_intro">Настоящий документ является официальным предложением (публичной офертой) на приобретение неисключительной лицензии на программное обеспечение Cyber Security PRO для WordPress.</p>
+    
+    <h2 data-i18n="terms_s1_title">1. Термины и определения</h2>
+    <p data-i18n-html="terms_s1_p1"><strong>Продавец</strong> — правообладатель программного обеспечения Cyber Security PRO.</p>
+    <p data-i18n-html="terms_s1_p2"><strong>Покупатель</strong> — физическое или юридическое лицо, осуществившее акцепт настоящей оферты путём оплаты.</p>
+    <p data-i18n-html="terms_s1_p3"><strong>Лицензия</strong> — неисключительное право на использование программного обеспечения на условиях выбранного тарифа.</p>
+    <p data-i18n-html="terms_s1_p4"><strong>Акцепт</strong> — полное и безоговорочное принятие условий оферты, осуществляемое путём оплаты.</p>
+    
+    <h2 data-i18n="terms_s2_title">2. Предмет оферты</h2>
+    <p data-i18n="terms_s2_p1">Продавец предоставляет Покупателю неисключительную лицензию на использование Cyber Security PRO на сайте под управлением WordPress на условиях и в объёме, соответствующих выбранному тарифу.</p>
+    
+    <h2 data-i18n="terms_s3_title">3. Тарифы и стоимость</h2>
+    <p data-i18n="terms_s3_p1">Актуальные тарифы, цены и состав услуг опубликованы на странице приобретения лицензии. Продавец оставляет за собой право изменять стоимость и состав тарифов. Изменения не затрагивают уже оплаченные лицензии.</p>
+    
+    <h2 data-i18n="terms_s4_title">4. Порядок акцепта и предоставления лицензии</h2>
+    <ol>
+        <li data-i18n="terms_s4_li1">Покупатель выбирает тариф и производит оплату через доступные платёжные системы.</li>
+        <li data-i18n="terms_s4_li2">После успешной оплаты на указанный Покупателем адрес электронной почты отправляется лицензионный ключ.</li>
+        <li data-i18n="terms_s4_li3">Покупатель активирует лицензию в административной панели WordPress, введя полученный ключ в соответствующее поле плагина Cyber Security.</li>
+        <li data-i18n="terms_s4_li4">С момента активации Покупателю предоставляется доступ к PRO-функциям плагина.</li>
+    </ol>
+    
+    <h2 data-i18n="terms_s5_title">5. Условия использования</h2>
+    <ul>
+        <li data-i18n="terms_s5_li1">Одна лицензия действительна для одного доменного имени (сайта).</li>
+        <li data-i18n="terms_s5_li2">Лицензия не подлежит передаче или перепродаже третьим лицам.</li>
+        <li data-i18n="terms_s5_li3">Покупатель не вправе модифицировать, декомпилировать или иным образом изменять исходный код плагина.</li>
+    </ul>
+    
+    <h2 data-i18n="terms_s6_title">6. Срок действия лицензии</h2>
+    <p data-i18n="terms_s6_p1">Срок действия лицензии определяется выбранным тарифом: 1 месяц, 1 год или бессрочно. По истечении оплаченного периода PRO-функции отключаются, базовая защита продолжает работать.</p>
+    
+    <h2 data-i18n="terms_s7_title">7. Возврат средств</h2>
+    <p data-i18n="terms_s7_p1">Условия и порядок возврата регулируются Политикой возврата средств, являющейся неотъемлемой частью настоящей оферты.</p>
+    
+    <h2 data-i18n="terms_s8_title">8. Контакты</h2>
+    <p data-i18n-html="terms_s8_p1">По всем вопросам: <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a></p>
+    
+    <a href="../../" class="back-link" data-i18n="back_home">← На главную</a>
+</div>
+
+<script>
+const I18n = {
+    current: 'ru',
+    languages: {
+        ru: { name: 'Русский', flag: '🇷🇺' },
+        en: { name: 'English', flag: '🇬🇧' },
+        de: { name: 'Deutsch', flag: '🇩🇪' },
+        fr: { name: 'Français', flag: '🇫🇷' },
+        it: { name: 'Italiano', flag: '🇮🇹' },
+        es: { name: 'Español', flag: '🇪🇸' },
+        pt: { name: 'Português', flag: '🇧🇷' },
+        zh: { name: '中文', flag: '🇨🇳' },
+        ja: { name: '日本語', flag: '🇯🇵' },
+        ko: { name: '한국어', flag: '🇰🇷' }
+    },
+    init: function() {
+        let lang = this.getSavedLanguage() || this.getBrowserLanguage();
+        if (!this.languages[lang]) lang = 'en';
+        this.setLanguage(lang);
+        this.renderSwitcher();
+    },
+    getSavedLanguage: function() { return localStorage.getItem('cs_lang'); },
+    getBrowserLanguage: function() {
+        const lang = navigator.language || navigator.userLanguage || 'en';
+        return lang.split('-')[0];
+    },
+    setLanguage: function(lang) {
+        this.current = lang;
+        localStorage.setItem('cs_lang', lang);
+        document.documentElement.lang = lang;
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (DocTranslations[lang] && DocTranslations[lang][key]) {
+                el.textContent = DocTranslations[lang][key];
+            }
+        });
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            if (DocTranslations[lang] && DocTranslations[lang][key]) {
+                el.innerHTML = DocTranslations[lang][key];
+            }
+        });
+        document.querySelectorAll('.lang-option').forEach(opt => {
+            opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
+        });
+        const currentBtn = document.querySelector('.lang-current span');
+        if (currentBtn && this.languages[lang]) {
+            currentBtn.textContent = this.languages[lang].flag + ' ' + this.languages[lang].name;
+        }
+    },
+    renderSwitcher: function() {
+        const container = document.getElementById('lang-switcher');
+        if (!container) return;
+        const current = this.languages[this.current] || this.languages['en'];
+        let html = '<div class="lang-current" onclick="I18n.toggleSwitcher()">';
+        html += '<span>' + current.flag + ' ' + current.name + '</span>';
+        html += '<svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+        html += '</div><div class="lang-dropdown" id="lang-dropdown" style="display:none;">';
+        for (let code in this.languages) {
+            const lang = this.languages[code];
+            const active = code === this.current ? ' active' : '';
+            html += '<div class="lang-option' + active + '" data-lang="' + code + '" onclick="I18n.setLanguage(\'' + code + '\')">';
+            html += '<span class="lang-flag">' + lang.flag + '</span><span class="lang-name">' + lang.name + '</span></div>';
+        }
+        html += '</div>';
+        container.innerHTML = html;
+    },
+    toggleSwitcher: function() {
+        const dropdown = document.getElementById('lang-dropdown');
+        if (dropdown) {
+            const isOpen = dropdown.style.display === 'block';
+            dropdown.style.display = isOpen ? 'none' : 'block';
+            document.querySelector('.lang-current').classList.toggle('open', !isOpen);
+        }
+    }
+};
+
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('#lang-switcher')) {
+        const dropdown = document.getElementById('lang-dropdown');
+        if (dropdown) dropdown.style.display = 'none';
+        document.querySelector('.lang-current')?.classList.remove('open');
+    }
+});
+
+const DocTranslations = {
+    ru: {
+        terms_title: 'Публичная оферта | Cyber Security PRO',
+        terms_intro: 'Настоящий документ является официальным предложением (публичной офертой) на приобретение неисключительной лицензии на программное обеспечение Cyber Security PRO для WordPress.',
+        terms_s1_title: '1. Термины и определения',
+        terms_s1_p1: '<strong>Продавец</strong> — правообладатель программного обеспечения Cyber Security PRO.',
+        terms_s1_p2: '<strong>Покупатель</strong> — физическое или юридическое лицо, осуществившее акцепт настоящей оферты путём оплаты.',
+        terms_s1_p3: '<strong>Лицензия</strong> — неисключительное право на использование программного обеспечения на условиях выбранного тарифа.',
+        terms_s1_p4: '<strong>Акцепт</strong> — полное и безоговорочное принятие условий оферты, осуществляемое путём оплаты.',
+        terms_s2_title: '2. Предмет оферты',
+        terms_s2_p1: 'Продавец предоставляет Покупателю неисключительную лицензию на использование Cyber Security PRO на сайте под управлением WordPress на условиях и в объёме, соответствующих выбранному тарифу.',
+        terms_s3_title: '3. Тарифы и стоимость',
+        terms_s3_p1: 'Актуальные тарифы, цены и состав услуг опубликованы на странице приобретения лицензии. Продавец оставляет за собой право изменять стоимость и состав тарифов. Изменения не затрагивают уже оплаченные лицензии.',
+        terms_s4_title: '4. Порядок акцепта и предоставления лицензии',
+        terms_s4_li1: 'Покупатель выбирает тариф и производит оплату через доступные платёжные системы.',
+        terms_s4_li2: 'После успешной оплаты на указанный Покупателем адрес электронной почты отправляется лицензионный ключ.',
+        terms_s4_li3: 'Покупатель активирует лицензию в административной панели WordPress, введя полученный ключ в соответствующее поле плагина Cyber Security.',
+        terms_s4_li4: 'С момента активации Покупателю предоставляется доступ к PRO-функциям плагина.',
+        terms_s5_title: '5. Условия использования',
+        terms_s5_li1: 'Одна лицензия действительна для одного доменного имени (сайта).',
+        terms_s5_li2: 'Лицензия не подлежит передаче или перепродаже третьим лицам.',
+        terms_s5_li3: 'Покупатель не вправе модифицировать, декомпилировать или иным образом изменять исходный код плагина.',
+        terms_s6_title: '6. Срок действия лицензии',
+        terms_s6_p1: 'Срок действия лицензии определяется выбранным тарифом: 1 месяц, 1 год или бессрочно. По истечении оплаченного периода PRO-функции отключаются, базовая защита продолжает работать.',
+        terms_s7_title: '7. Возврат средств',
+        terms_s7_p1: 'Условия и порядок возврата регулируются Политикой возврата средств, являющейся неотъемлемой частью настоящей оферты.',
+        terms_s8_title: '8. Контакты',
+        terms_s8_p1: 'По всем вопросам: <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>',
+        back_home: '← На главную'
+    },
+    en: {
+        terms_title: 'Terms of Service | Cyber Security PRO',
+        terms_intro: 'This document is an official offer (public offer) for the purchase of a non-exclusive license for Cyber Security PRO software for WordPress.',
+        terms_s1_title: '1. Terms and Definitions',
+        terms_s1_p1: '<strong>Seller</strong> — the copyright holder of Cyber Security PRO software.',
+        terms_s1_p2: '<strong>Buyer</strong> — an individual or legal entity who has accepted this offer by making a payment.',
+        terms_s1_p3: '<strong>License</strong> — a non-exclusive right to use the software under the terms of the selected plan.',
+        terms_s1_p4: '<strong>Acceptance</strong> — full and unconditional acceptance of the offer terms by making a payment.',
+        terms_s2_title: '2. Subject of the Offer',
+        terms_s2_p1: 'The Seller grants the Buyer a non-exclusive license to use Cyber Security PRO on a WordPress website under the terms and scope corresponding to the selected plan.',
+        terms_s3_title: '3. Plans and Pricing',
+        terms_s3_p1: 'Current plans, prices, and services are published on the license purchase page. The Seller reserves the right to change the cost and composition of plans. Changes do not affect already paid licenses.',
+        terms_s4_title: '4. Acceptance and License Provision',
+        terms_s4_li1: 'The Buyer selects a plan and makes payment through available payment systems.',
+        terms_s4_li2: 'After successful payment, a license key is sent to the email address provided by the Buyer.',
+        terms_s4_li3: 'The Buyer activates the license in the WordPress admin panel by entering the key in the Cyber Security plugin field.',
+        terms_s4_li4: 'From the moment of activation, the Buyer gets access to PRO plugin features.',
+        terms_s5_title: '5. Terms of Use',
+        terms_s5_li1: 'One license is valid for one domain name (website).',
+        terms_s5_li2: 'The license may not be transferred or resold to third parties.',
+        terms_s5_li3: 'The Buyer may not modify, decompile, or otherwise alter the plugin source code.',
+        terms_s6_title: '6. License Validity Period',
+        terms_s6_p1: 'The license validity period is determined by the selected plan: 1 month, 1 year, or perpetual. After the paid period expires, PRO features are disabled, but basic protection continues to work.',
+        terms_s7_title: '7. Refund',
+        terms_s7_p1: 'Refund terms and procedures are governed by the Refund Policy, which is an integral part of this offer.',
+        terms_s8_title: '8. Contacts',
+        terms_s8_p1: 'For all questions: <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>',
+        back_home: '← Back to Home'
+    },
+    de: {
+        terms_title: 'AGB | Cyber Security PRO',
+        terms_intro: 'Dieses Dokument ist ein offizielles Angebot zum Erwerb einer nicht-exklusiven Lizenz für Cyber Security PRO Software für WordPress.',
+        terms_s1_title: '1. Begriffe und Definitionen',
+        terms_s1_p1: '<strong>Verkäufer</strong> — der Rechteinhaber der Cyber Security PRO Software.',
+        terms_s1_p2: '<strong>Käufer</strong> — eine natürliche oder juristische Person, die dieses Angebot durch Zahlung angenommen hat.',
+        terms_s1_p3: '<strong>Lizenz</strong> — ein nicht-exklusives Recht zur Nutzung der Software zu den Bedingungen des gewählten Tarifs.',
+        terms_s1_p4: '<strong>Annahme</strong> — vollständige und bedingungslose Annahme der Angebotsbedingungen durch Zahlung.',
+        terms_s2_title: '2. Vertragsgegenstand',
+        terms_s2_p1: 'Der Verkäufer gewährt dem Käufer eine nicht-exklusive Lizenz zur Nutzung von Cyber Security PRO auf einer WordPress-Website.',
+        terms_s3_title: '3. Tarife und Preise',
+        terms_s3_p1: 'Aktuelle Tarife, Preise und Leistungen sind auf der Kaufseite veröffentlicht. Der Verkäufer behält sich das Recht vor, Kosten und Zusammensetzung der Tarife zu ändern.',
+        terms_s4_title: '4. Annahme und Lizenzbereitstellung',
+        terms_s4_li1: 'Der Käufer wählt einen Tarif und zahlt über verfügbare Zahlungssysteme.',
+        terms_s4_li2: 'Nach erfolgreicher Zahlung wird ein Lizenzschlüssel an die E-Mail des Käufers gesendet.',
+        terms_s4_li3: 'Der Käufer aktiviert die Lizenz im WordPress-Admin durch Eingabe des Schlüssels.',
+        terms_s4_li4: 'Ab Aktivierung erhält der Käufer Zugang zu den PRO-Funktionen.',
+        terms_s5_title: '5. Nutzungsbedingungen',
+        terms_s5_li1: 'Eine Lizenz gilt für einen Domainnamen (Website).',
+        terms_s5_li2: 'Die Lizenz darf nicht an Dritte übertragen oder weiterverkauft werden.',
+        terms_s5_li3: 'Der Käufer darf den Quellcode nicht modifizieren oder dekompilieren.',
+        terms_s6_title: '6. Lizenzlaufzeit',
+        terms_s6_p1: 'Die Lizenzlaufzeit richtet sich nach dem gewählten Tarif: 1 Monat, 1 Jahr oder unbegrenzt.',
+        terms_s7_title: '7. Rückerstattung',
+        terms_s7_p1: 'Rückerstattungsbedingungen sind in der Rückerstattungsrichtlinie geregelt.',
+        terms_s8_title: '8. Kontakte',
+        terms_s8_p1: 'Bei Fragen: <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>',
+        back_home: '← Zur Startseite'
+    },
+    fr: {
+    terms_title: 'Conditions générales | Cyber Security PRO',
+    terms_intro: 'Ce document est une offre officielle pour l\'achat d\'une licence non exclusive.',
+    terms_s1_title: '1. Termes et définitions',
+    terms_s1_p1: '<strong>Vendeur</strong> — titulaire des droits du logiciel.',
+    terms_s1_p2: '<strong>Acheteur</strong> — personne ayant accepté cette offre par paiement.',
+    terms_s1_p3: '<strong>Licence</strong> — droit non exclusif d\'utilisation du logiciel.',
+    terms_s1_p4: '<strong>Acceptation</strong> — acceptation complète par paiement.',
+    terms_s2_title: '2. Objet de l\'offre',
+    terms_s2_p1: 'Le Vendeur accorde à l\'Acheteur une licence non exclusive.',
+    terms_s3_title: '3. Tarifs',
+    terms_s3_p1: 'Les tarifs actuels sont publiés sur la page d\'achat.',
+    terms_s4_title: '4. Acceptation et fourniture de licence',
+    terms_s4_li1: 'L\'Acheteur choisit un tarif et paie.',
+    terms_s4_li2: 'Après paiement, une clé de licence est envoyée par email.',
+    terms_s4_li3: 'L\'Acheteur active la licence dans WordPress.',
+    terms_s4_li4: 'Accès aux fonctions PRO après activation.',
+    terms_s5_title: '5. Conditions d\'utilisation',
+    terms_s5_li1: 'Une licence par nom de domaine.',
+    terms_s5_li2: 'Licence non transférable.',
+    terms_s5_li3: 'Modification du code source interdite.',
+    terms_s6_title: '6. Durée de validité',
+    terms_s6_p1: 'Déterminée par le tarif choisi.',
+    terms_s7_title: '7. Remboursement',
+    terms_s7_p1: 'Voir la politique de remboursement.',
+    terms_s8_title: '8. Contacts',
+    terms_s8_p1: 'Questions : <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>',
+    back_home: "← Retour à l'accueil"
+},
+it: {
+    terms_title: 'Termini di servizio | Cyber Security PRO',
+    terms_intro: 'Documento di offerta ufficiale per l\'acquisto di una licenza.',
+    terms_s1_title: '1. Termini e definizioni',
+    terms_s1_p1: '<strong>Venditore</strong> — titolare dei diritti del software.',
+    terms_s1_p2: '<strong>Acquirente</strong> — persona che ha accettato l\'offerta pagando.',
+    terms_s1_p3: '<strong>Licenza</strong> — diritto non esclusivo di utilizzo.',
+    terms_s1_p4: '<strong>Accettazione</strong> — accettazione completa tramite pagamento.',
+    terms_s2_title: '2. Oggetto',
+    terms_s2_p1: 'Il Venditore concede una licenza non esclusiva.',
+    terms_s3_title: '3. Tariffe',
+    terms_s3_p1: 'Tariffe aggiornate sulla pagina di acquisto.',
+    terms_s4_title: '4. Fornitura licenza',
+    terms_s4_li1: 'Scegliere tariffa e pagare.',
+    terms_s4_li2: 'Chiave inviata per email dopo pagamento.',
+    terms_s4_li3: 'Attivare in WordPress.',
+    terms_s4_li4: 'Accesso PRO dopo attivazione.',
+    terms_s5_title: '5. Condizioni d\'uso',
+    terms_s5_li1: 'Una licenza per dominio.',
+    terms_s5_li2: 'Licenza non trasferibile.',
+    terms_s5_li3: 'Modifica codice vietata.',
+    terms_s6_title: '6. Validità',
+    terms_s6_p1: 'Determinata dalla tariffa scelta.',
+    terms_s7_title: '7. Rimborso',
+    terms_s7_p1: 'Vedere politica di rimborso.',
+    terms_s8_title: '8. Contatti',
+    terms_s8_p1: '<a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>',
+    back_home: '← Torna alla home'
+},
+es: {
+    terms_title: 'Términos de servicio | Cyber Security PRO',
+    terms_intro: 'Oferta oficial para la compra de una licencia.',
+    terms_s1_title: '1. Términos y definiciones',
+    terms_s1_p1: '<strong>Vendedor</strong> — titular de los derechos del software.',
+    terms_s1_p2: '<strong>Comprador</strong> — persona que aceptó la oferta pagando.',
+    terms_s1_p3: '<strong>Licencia</strong> — derecho no exclusivo de uso.',
+    terms_s1_p4: '<strong>Aceptación</strong> — aceptación completa mediante pago.',
+    terms_s2_title: '2. Objeto',
+    terms_s2_p1: 'El Vendedor concede una licencia no exclusiva.',
+    terms_s3_title: '3. Tarifas',
+    terms_s3_p1: 'Tarifas actualizadas en la página de compra.',
+    terms_s4_title: '4. Entrega de licencia',
+    terms_s4_li1: 'Elegir tarifa y pagar.',
+    terms_s4_li2: 'Clave enviada por email.',
+    terms_s4_li3: 'Activar en WordPress.',
+    terms_s4_li4: 'Acceso PRO tras activación.',
+    terms_s5_title: '5. Condiciones de uso',
+    terms_s5_li1: 'Una licencia por dominio.',
+    terms_s5_li2: 'Licencia no transferible.',
+    terms_s5_li3: 'Prohibida modificación del código.',
+    terms_s6_title: '6. Vigencia',
+    terms_s6_p1: 'Determinada por la tarifa elegida.',
+    terms_s7_title: '7. Reembolso',
+    terms_s7_p1: 'Ver política de reembolso.',
+    terms_s8_title: '8. Contactos',
+    terms_s8_p1: '<a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>',
+    back_home: '← Volver al inicio'
+},
+pt: {
+    terms_title: 'Termos de serviço | Cyber Security PRO',
+    terms_intro: 'Oferta oficial para compra de licença.',
+    terms_s1_title: '1. Termos e definições',
+    terms_s1_p1: '<strong>Vendedor</strong> — titular dos direitos do software.',
+    terms_s1_p2: '<strong>Comprador</strong> — pessoa que aceitou a oferta pagando.',
+    terms_s1_p3: '<strong>Licença</strong> — direito não exclusivo de uso.',
+    terms_s1_p4: '<strong>Aceitação</strong> — aceitação completa por pagamento.',
+    terms_s2_title: '2. Objeto',
+    terms_s2_p1: 'O Vendedor concede uma licença não exclusiva.',
+    terms_s3_title: '3. Tarifas',
+    terms_s3_p1: 'Tarifas na página de compra.',
+    terms_s4_title: '4. Entrega da licença',
+    terms_s4_li1: 'Escolher tarifa e pagar.',
+    terms_s4_li2: 'Chave enviada por email.',
+    terms_s4_li3: 'Ativar no WordPress.',
+    terms_s4_li4: 'Acesso PRO após ativação.',
+    terms_s5_title: '5. Condições de uso',
+    terms_s5_li1: 'Uma licença por domínio.',
+    terms_s5_li2: 'Licença não transferível.',
+    terms_s5_li3: 'Proibida modificação do código.',
+    terms_s6_title: '6. Vigência',
+    terms_s6_p1: 'Determinada pela tarifa escolhida.',
+    terms_s7_title: '7. Reembolso',
+    terms_s7_p1: 'Ver política de reembolso.',
+    terms_s8_title: '8. Contatos',
+    terms_s8_p1: '<a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>',
+    back_home: '← Voltar ao início'
+},
+zh: {
+    terms_title: '服务条款 | Cyber Security PRO',
+    terms_intro: '购买许可证的官方要约。',
+    terms_s1_title: '1. 术语和定义',
+    terms_s1_p1: '<strong>卖方</strong> — 软件版权持有者。',
+    terms_s1_p2: '<strong>买方</strong> — 通过付款接受要约的人。',
+    terms_s1_p3: '<strong>许可证</strong> — 非独家使用权。',
+    terms_s1_p4: '<strong>接受</strong> — 通过付款完全接受。',
+    terms_s2_title: '2. 要约标的',
+    terms_s2_p1: '卖方向买方授予非独家许可。',
+    terms_s3_title: '3. 费率',
+    terms_s3_p1: '当前费率发布在购买页面。',
+    terms_s4_title: '4. 许可证提供',
+    terms_s4_li1: '选择费率并付款。',
+    terms_s4_li2: '密钥通过邮件发送。',
+    terms_s4_li3: '在WordPress中激活。',
+    terms_s4_li4: '激活后访问PRO功能。',
+    terms_s5_title: '5. 使用条件',
+    terms_s5_li1: '每个域名一个许可证。',
+    terms_s5_li2: '许可证不可转让。',
+    terms_s5_li3: '禁止修改源代码。',
+    terms_s6_title: '6. 有效期',
+    terms_s6_p1: '由所选费率决定。',
+    terms_s7_title: '7. 退款',
+    terms_s7_p1: '请参阅退款政策。',
+    terms_s8_title: '8. 联系方式',
+    terms_s8_p1: '<a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>',
+    back_home: '← 返回首页'
+},
+ja: {
+    terms_title: '利用規約 | Cyber Security PRO',
+    terms_intro: 'ライセンス購入の公式オファー。',
+    terms_s1_title: '1. 用語と定義',
+    terms_s1_p1: '<strong>販売者</strong> — ソフトウェアの権利者。',
+    terms_s1_p2: '<strong>購入者</strong> — 支払いによりオファーを受諾した者。',
+    terms_s1_p3: '<strong>ライセンス</strong> — 非独占的使用権。',
+    terms_s1_p4: '<strong>受諾</strong> — 支払いによる完全な承諾。',
+    terms_s2_title: '2. オファー対象',
+    terms_s2_p1: '販売者は購入者に非独占的ライセンスを付与します。',
+    terms_s3_title: '3. 料金',
+    terms_s3_p1: '現在の料金は購入ページに掲載。',
+    terms_s4_title: '4. ライセンス提供',
+    terms_s4_li1: '料金を選択して支払い。',
+    terms_s4_li2: 'キーをメールで送信。',
+    terms_s4_li3: 'WordPressでアクティベート。',
+    terms_s4_li4: 'アクティベーション後PRO機能にアクセス。',
+    terms_s5_title: '5. 利用条件',
+    terms_s5_li1: '1ドメインにつき1ライセンス。',
+    terms_s5_li2: 'ライセンス譲渡不可。',
+    terms_s5_li3: 'ソースコード改変禁止。',
+    terms_s6_title: '6. 有効期間',
+    terms_s6_p1: '選択した料金により決定。',
+    terms_s7_title: '7. 返金',
+    terms_s7_p1: '返金ポリシー参照。',
+    terms_s8_title: '8. 連絡先',
+    terms_s8_p1: '<a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>',
+    back_home: '← ホームに戻る'
+},
+ko: {
+    terms_title: '이용약관 | Cyber Security PRO',
+    terms_intro: '라이선스 구매를 위한 공식 제안.',
+    terms_s1_title: '1. 용어 및 정의',
+    terms_s1_p1: '<strong>판매자</strong> — 소프트웨어 저작권자.',
+    terms_s1_p2: '<strong>구매자</strong> — 결제로 제안을 수락한 자.',
+    terms_s1_p3: '<strong>라이선스</strong> — 비독점적 사용권.',
+    terms_s1_p4: '<strong>수락</strong> — 결제를 통한 완전한 수락.',
+    terms_s2_title: '2. 제안 대상',
+    terms_s2_p1: '판매자는 구매자에게 비독점적 라이선스를 부여합니다.',
+    terms_s3_title: '3. 요금',
+    terms_s3_p1: '현재 요금은 구매 페이지에 게시.',
+    terms_s4_title: '4. 라이선스 제공',
+    terms_s4_li1: '요금제 선택 및 결제.',
+    terms_s4_li2: '키를 이메일로 전송.',
+    terms_s4_li3: 'WordPress에서 활성화.',
+    terms_s4_li4: '활성화 후 PRO 기능 접근.',
+    terms_s5_title: '5. 이용 조건',
+    terms_s5_li1: '도메인당 1개 라이선스.',
+    terms_s5_li2: '라이선스 양도 불가.',
+    terms_s5_li3: '소스 코드 수정 금지.',
+    terms_s6_title: '6. 유효 기간',
+    terms_s6_p1: '선택한 요금제에 따라 결정.',
+    terms_s7_title: '7. 환불',
+    terms_s7_p1: '환불 정책 참조.',
+    terms_s8_title: '8. 연락처',
+    terms_s8_p1: '<a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>',
+    back_home: '← 홈으로'
+}
+};
+
+for (let lang in DocTranslations) {
+    if (lang === 'en') continue;
+    for (let key in DocTranslations.en) {
+        if (!DocTranslations[lang][key]) {
+            DocTranslations[lang][key] = DocTranslations.en[key];
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() { I18n.init(); });
+</script>
+</body>
+</html>
