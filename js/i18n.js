@@ -2,71 +2,51 @@
  * i18n — Multi-language support
  */
 const I18n = {
-    // Текущий язык
     current: 'ru',
     
-    // Доступные языки
     languages: {
-        ru: 'Русский',
-        en: 'English',
-        de: 'Deutsch',
-        fr: 'Français',
-        it: 'Italiano',
-        es: 'Español',
-        pt: 'Português',
-        zh: '中文',
-        ja: '日本語',
-        ko: '한국어'
+        ru: { name: 'Русский', flag: '🇷🇺' },
+        en: { name: 'English', flag: '🇬🇧' },
+        de: { name: 'Deutsch', flag: '🇩🇪' },
+        fr: { name: 'Français', flag: '🇫🇷' },
+        it: { name: 'Italiano', flag: '🇮🇹' },
+        es: { name: 'Español', flag: '🇪🇸' },
+        pt: { name: 'Português', flag: '🇧🇷' },
+        zh: { name: '中文', flag: '🇨🇳' },
+        ja: { name: '日本語', flag: '🇯🇵' },
+        ko: { name: '한국어', flag: '🇰🇷' }
     },
     
-    // Инициализация
     init: function() {
-        // Определяем язык
         let lang = this.getSavedLanguage() || this.getBrowserLanguage();
-        
-        // Если язык не поддерживается — английский
-        if (!this.languages[lang]) {
-            lang = 'en';
-        }
-        
-        // Применяем
+        if (!this.languages[lang]) lang = 'en';
         this.setLanguage(lang);
         this.renderSwitcher();
     },
     
-    // Получить сохранённый язык
     getSavedLanguage: function() {
         return localStorage.getItem('cs_lang');
     },
     
-    // Определить язык браузера
     getBrowserLanguage: function() {
         const lang = navigator.language || navigator.userLanguage || 'en';
-        return lang.split('-')[0]; // ru-RU → ru
+        return lang.split('-')[0];
     },
     
-    // Установить язык
     setLanguage: function(lang) {
         this.current = lang;
         localStorage.setItem('cs_lang', lang);
         document.documentElement.lang = lang;
         
-        // Переводим все элементы с атрибутом data-i18n
+        // Переводим textContent
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (Translations[lang] && Translations[lang][key]) {
-                // Для placeholder
-                if (el.placeholder !== undefined && key.endsWith('_placeholder')) {
-                    el.placeholder = Translations[lang][key];
-                }
-                // Для обычного текста
-                else {
-                    el.textContent = Translations[lang][key];
-                }
+                el.textContent = Translations[lang][key];
             }
         });
         
-        // Переводим все элементы с атрибутом data-i18n-html (HTML внутри)
+        // Переводим innerHTML
         document.querySelectorAll('[data-i18n-html]').forEach(el => {
             const key = el.getAttribute('data-i18n-html');
             if (Translations[lang] && Translations[lang][key]) {
@@ -74,49 +54,71 @@ const I18n = {
             }
         });
         
-        // Обновляем переключатель
+        // Переводим placeholder
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (Translations[lang] && Translations[lang][key]) {
+                el.placeholder = Translations[lang][key];
+            }
+        });
+        
+        // Обновляем активный язык в переключателе
         document.querySelectorAll('.lang-option').forEach(opt => {
             opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
         });
+        
+        // Обновляем текущий язык в кнопке
+        const currentBtn = document.querySelector('.lang-current span');
+        if (currentBtn && this.languages[lang]) {
+            currentBtn.textContent = this.languages[lang].flag + ' ' + this.languages[lang].name;
+        }
     },
     
-    // Отрисовать переключатель языков
     renderSwitcher: function() {
         const container = document.getElementById('lang-switcher');
         if (!container) return;
         
-        let html = '<div class="lang-current" onclick="I18n.toggleSwitcher()">' + 
-                   this.languages[this.current] + ' ▼</div>';
+        const current = this.languages[this.current] || this.languages['en'];
+        
+        let html = '<div class="lang-current" onclick="I18n.toggleSwitcher()">';
+        html += '<span>' + current.flag + ' ' + current.name + '</span>';
+        html += '<svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+        html += '</div>';
         html += '<div class="lang-dropdown" id="lang-dropdown" style="display:none;">';
         
         for (let code in this.languages) {
-            html += '<div class="lang-option' + (code === this.current ? ' active' : '') + 
-                    '" data-lang="' + code + '" onclick="I18n.setLanguage(\'' + code + '\')">' + 
-                    this.languages[code] + '</div>';
+            const lang = this.languages[code];
+            const active = code === this.current ? ' active' : '';
+            html += '<div class="lang-option' + active + '" data-lang="' + code + '" onclick="I18n.setLanguage(\'' + code + '\')">';
+            html += '<span class="lang-flag">' + lang.flag + '</span>';
+            html += '<span class="lang-name">' + lang.name + '</span>';
+            html += '</div>';
         }
         
         html += '</div>';
         container.innerHTML = html;
     },
     
-    // Показать/скрыть выпадающий список
     toggleSwitcher: function() {
         const dropdown = document.getElementById('lang-dropdown');
         if (dropdown) {
-            dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+            const isOpen = dropdown.style.display === 'block';
+            dropdown.style.display = isOpen ? 'none' : 'block';
+            document.querySelector('.lang-current').classList.toggle('open', !isOpen);
         }
     }
 };
 
-// Закрывать выпадающий список при клике вне
+// Закрывать при клике вне
 document.addEventListener('click', function(e) {
     if (!e.target.closest('#lang-switcher')) {
         const dropdown = document.getElementById('lang-dropdown');
         if (dropdown) dropdown.style.display = 'none';
+        document.querySelector('.lang-current')?.classList.remove('open');
     }
 });
 
-// Инициализация при загрузке
+// Инициализация
 document.addEventListener('DOMContentLoaded', function() {
     I18n.init();
 });
