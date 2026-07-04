@@ -170,6 +170,7 @@ plan_price_yearly: '4 990₽',
 plan_price_period_yearly: '/год',
 plan_price_lifetime: '14 990₽',
         footer_contact_page: 'Контакты',
+        footer_license: 'Лицензионное соглашение',
     },
 
     en: {
@@ -340,6 +341,7 @@ plan_price_yearly: '$50',
 plan_price_period_yearly: '/yr',
 plan_price_lifetime: '$150',
         footer_contact_page: 'Contact',
+        footer_license: 'License Agreement',
     },
 
     de: {
@@ -510,6 +512,7 @@ plan_price_yearly: '50€',
 plan_price_period_yearly: '/Jahr',
 plan_price_lifetime: '150€',
         footer_contact_page: 'Kontakt',
+        footer_license: 'Lizenzvereinbarung',
     },
 
     fr: {
@@ -680,6 +683,7 @@ plan_price_yearly: '50€',
 plan_price_period_yearly: '/an',
 plan_price_lifetime: '150€',
         footer_contact_page: 'Contact',
+        footer_license: 'Contrat de licence',
     },
 
     it: {
@@ -850,6 +854,7 @@ plan_price_yearly: '50€',
 plan_price_period_yearly: '/anno',
 plan_price_lifetime: '150€',
         footer_contact_page: 'Contatti',
+        footer_license: 'Contratto di licenza',
     },
 
     es: {
@@ -1020,6 +1025,7 @@ plan_price_yearly: '50€',
 plan_price_period_yearly: '/año',
 plan_price_lifetime: '150€',
         footer_contact_page: 'Contacto',
+        footer_license: 'Acuerdo de licencia',
     },
 
     pt: {
@@ -1190,6 +1196,7 @@ plan_price_yearly: 'R$250',
 plan_price_period_yearly: '/ano',
 plan_price_lifetime: 'R$750',
         footer_contact_page: 'Contato',
+        footer_license: 'Contrato de licença',
     },
 
     zh: {
@@ -1360,6 +1367,7 @@ plan_price_yearly: '¥350',
 plan_price_period_yearly: '/年',
 plan_price_lifetime: '¥1,050',
         footer_contact_page: '联系我们',
+        footer_license: '许可协议', 
     },
 
     ja: {
@@ -1530,6 +1538,7 @@ plan_price_yearly: '¥7,500',
 plan_price_period_yearly: '/年',
 plan_price_lifetime: '¥22,500',
         footer_contact_page: 'お問い合わせ',
+        footer_license: 'ライセンス契約',
     },
 
     ko: {
@@ -1700,6 +1709,7 @@ plan_price_yearly: '₩70,000',
 plan_price_period_yearly: '/년',
 plan_price_lifetime: '₩210,000',
         footer_contact_page: '문의하기',
+        footer_license: '라이선스 계약',
     }
 };
 
