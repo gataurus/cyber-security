@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="refund_title">Политика возврата средств | Cyber Security PRO</title>
-    <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="stylesheet" href="../../css/style.css">
     <script src="../../js/translations.js"></script>
     <style>
         .doc-page { max-width: 800px; margin: 60px auto; padding: 40px; }
         .doc-page h1 { color: var(--green); margin-bottom: 30px; font-size: 2rem; }
         .doc-page h2 { color: #fff; margin: 30px 0 15px; font-size: 1.3rem; }
+        .doc-page h3 { color: var(--text); margin: 20px 0 10px; font-size: 1.05rem; }
         .doc-page p, .doc-page li, .doc-page ol { color: var(--text-secondary); margin-bottom: 12px; font-size: 0.95rem; line-height: 1.7; }
         .doc-page a { color: var(--green); }
         .doc-page strong { color: #fff; }
@@ -23,325 +24,86 @@
         .lang-current span { font-size: 0.85rem; }
         .lang-arrow { transition: transform 0.2s; color: var(--text-secondary); }
         .lang-current.open .lang-arrow { transform: rotate(180deg); }
-        .lang-dropdown { position: absolute; top: calc(100% + 4px); right: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); min-width: 180px; max-height: 320px; overflow-y: auto; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); animation: fadeIn 0.15s ease; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+        .lang-dropdown { position: absolute; top: calc(100% + 4px); right: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); min-width: 180px; max-height: 320px; overflow-y: auto; box-shadow: 0 8px 24px rgba(0,0,0,0.5); animation: fadeIn 0.15s ease; scrollbar-width: thin; scrollbar-color: var(--green) transparent; }
+        .lang-dropdown::-webkit-scrollbar { width: 4px; }
+        .lang-dropdown::-webkit-scrollbar-track { background: transparent; }
+        .lang-dropdown::-webkit-scrollbar-thumb { background: var(--green); border-radius: 2px; }
+        @keyframes fadeIn { from{opacity:0;transform:translateY(-4px)} to{opacity:1;transform:translateY(0)} }
         .lang-option { display: flex; align-items: center; gap: 10px; padding: 10px 16px; cursor: pointer; color: var(--text-secondary); font-size: 0.85rem; transition: all 0.15s; }
-        .lang-option:hover { background: rgba(0, 224, 72, 0.05); color: var(--text); }
-        .lang-option.active { color: var(--green); font-weight: 700; background: rgba(0, 224, 72, 0.08); }
+        .lang-option:hover { background: rgba(0,224,72,0.05); color: var(--text); }
+        .lang-option.active { color: var(--green); font-weight: 700; background: rgba(0,224,72,0.08); }
     </style>
 </head>
 <body>
-
 <div id="lang-switcher" class="lang-switcher"></div>
-
 <div class="doc-page">
     <h1 data-i18n="refund_title">Политика возврата средств</h1>
     
-    <h2 data-i18n="refund_s1_title">Условия возврата</h2>
+    <h2 data-i18n="refund_s1_title">1. Условия возврата</h2>
     <p data-i18n="refund_s1_p1">Возврат денежных средств возможен при одновременном соблюдении следующих условий:</p>
     <ul>
-        <li data-i18n="refund_s1_li1">С момента приобретения лицензии прошло не более 7 (семи) календарных дней</li>
-        <li data-i18n="refund_s1_li2">Лицензионный ключ не был активирован на сайте</li>
+        <li data-i18n="refund_s1_li1">С момента приобретения лицензии прошло не более 7 (семи) календарных дней.</li>
+        <li data-i18n="refund_s1_li2">Лицензионный ключ не был активирован ни на одном сайте. Правообладатель проверяет статус активации ключа по базе лицензий: если ключ был активирован на любом домене — возврат невозможен.</li>
     </ul>
+    <p data-i18n="refund_s1_p2">Правообладатель оставляет за собой право запросить у Пользователя дополнительную информацию для верификации покупки.</p>
     
-    <h2 data-i18n="refund_s2_title">Порядок оформления возврата</h2>
-    <p data-i18n-html="refund_s2_p1">Для оформления возврата направьте запрос на адрес <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a> с темой «Возврат средств».</p>
-    <p data-i18n="refund_s2_p2">В запросе необходимо указать:</p>
+    <h2 data-i18n="refund_s2_title">2. Порядок оформления возврата</h2>
+    <p data-i18n="refund_s2_p1">Для оформления возврата Пользователю необходимо:</p>
+    <ol>
+        <li data-i18n="refund_s2_li1">Направить запрос через <a href="../contact">страницу контактов</a> с темой «Возврат средств».</li>
+        <li data-i18n="refund_s2_li2">Указать в запросе: адрес электронной почты, использованный при приобретении лицензии, и лицензионный ключ.</li>
+    </ol>
+    <p data-i18n="refund_s2_p2">Правообладатель рассматривает запрос в течение 5 (пяти) рабочих дней. При положительном решении возврат производится в течение 10 (десяти) рабочих дней с момента подтверждения запроса. Средства возвращаются тем же способом, которым была произведена оплата.</p>
+    
+    <h2 data-i18n="refund_s3_title">3. Случаи, в которых возврат невозможен</h2>
+    <p data-i18n="refund_s3_p1">Возврат не производится в следующих случаях:</p>
     <ul>
-        <li data-i18n="refund_s2_li1">Адрес электронной почты, использованный при приобретении лицензии</li>
-        <li data-i18n="refund_s2_li2">Лицензионный ключ</li>
-    </ul>
-    <p data-i18n="refund_s2_p3">Возврат производится в течение 10 (десяти) рабочих дней с момента получения и подтверждения запроса. Средства возвращаются тем же способом, которым была произведена оплата.</p>
-    
-    <h2 data-i18n="refund_s3_title">Случаи, в которых возврат невозможен</h2>
-    <ul>
-        <li data-i18n="refund_s3_li1">Лицензионный ключ был активирован на любом сайте</li>
-        <li data-i18n="refund_s3_li2">С момента приобретения прошло более 7 календарных дней</li>
+        <li data-i18n="refund_s3_li1">Лицензионный ключ был активирован на любом сайте (домене).</li>
+        <li data-i18n="refund_s3_li2">С момента приобретения прошло более 7 (семи) календарных дней.</li>
+        <li data-i18n="refund_s3_li3">Запрос на возврат не содержит достаточной информации для идентификации покупки.</li>
+        <li data-i18n="refund_s3_li4">Лицензия была приобретена по тарифу «PRO Навсегда» и с момента активации прошло более 30 дней (расширенный срок возврата для данного тарифа).</li>
     </ul>
     
-    <p data-i18n="refund_footer">Настоящая Политика является неотъемлемой частью Публичной оферты.</p>
+    <h2 data-i18n="refund_s4_title">4. Особые условия для тарифа «PRO Навсегда»</h2>
+    <p data-i18n="refund_s4_p1">Для тарифа «PRO Навсегда» действует расширенный срок возврата — 30 (тридцать) календарных дней с момента активации, при условии что функциональность ПО не соответствовала заявленной на Сайте. Данное исключение не распространяется на случаи, когда Пользователь просто передумал или приобрёл лицензию по ошибке.</p>
+    
+    <h2 data-i18n="refund_s5_title">5. Заключительные положения</h2>
+    <p data-i18n="refund_s5_p1">Настоящая Политика является неотъемлемой частью Публичной оферты. Правообладатель оставляет за собой право вносить изменения в настоящую Политику. Изменения вступают в силу с момента публикации новой редакции на Сайте.</p>
+    <p data-i18n="refund_s5_p2">Возврат средств за лицензию, приобретённую до вступления изменений в силу, регулируется Политикой, действовавшей на момент приобретения.</p>
     
     <a href="../../" class="back-link" data-i18n="back_home">← На главную</a>
 </div>
 
 <script>
-const I18n = {
-    current: 'ru',
-    languages: {
-        ru: { name: 'Русский', flag: '🇷🇺' },
-        en: { name: 'English', flag: '🇬🇧' },
-        de: { name: 'Deutsch', flag: '🇩🇪' },
-        fr: { name: 'Français', flag: '🇫🇷' },
-        it: { name: 'Italiano', flag: '🇮🇹' },
-        es: { name: 'Español', flag: '🇪🇸' },
-        pt: { name: 'Português', flag: '🇧🇷' },
-        zh: { name: '中文', flag: '🇨🇳' },
-        ja: { name: '日本語', flag: '🇯🇵' },
-        ko: { name: '한국어', flag: '🇰🇷' }
-    },
-    init: function() {
-        let lang = this.getSavedLanguage() || this.getBrowserLanguage();
-        if (!this.languages[lang]) lang = 'en';
-        this.setLanguage(lang);
-        this.renderSwitcher();
-    },
-    getSavedLanguage: function() { return localStorage.getItem('cs_lang'); },
-    getBrowserLanguage: function() {
-        const lang = navigator.language || navigator.userLanguage || 'en';
-        return lang.split('-')[0];
-    },
-    setLanguage: function(lang) {
-        this.current = lang;
-        localStorage.setItem('cs_lang', lang);
-        document.documentElement.lang = lang;
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (DocTranslations[lang] && DocTranslations[lang][key]) {
-                el.textContent = DocTranslations[lang][key];
-            }
-        });
-        document.querySelectorAll('[data-i18n-html]').forEach(el => {
-            const key = el.getAttribute('data-i18n-html');
-            if (DocTranslations[lang] && DocTranslations[lang][key]) {
-                el.innerHTML = DocTranslations[lang][key];
-            }
-        });
-        document.querySelectorAll('.lang-option').forEach(opt => {
-            opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
-        });
-        const currentBtn = document.querySelector('.lang-current span');
-        if (currentBtn && this.languages[lang]) {
-            currentBtn.textContent = this.languages[lang].flag + ' ' + this.languages[lang].name;
-        }
-    },
-    renderSwitcher: function() {
-        const container = document.getElementById('lang-switcher');
-        if (!container) return;
-        const current = this.languages[this.current] || this.languages['en'];
-        let html = '<div class="lang-current" onclick="I18n.toggleSwitcher()">';
-        html += '<span>' + current.flag + ' ' + current.name + '</span>';
-        html += '<svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
-        html += '</div><div class="lang-dropdown" id="lang-dropdown" style="display:none;">';
-        for (let code in this.languages) {
-            const lang = this.languages[code];
-            const active = code === this.current ? ' active' : '';
-            html += '<div class="lang-option' + active + '" data-lang="' + code + '" onclick="I18n.setLanguage(\'' + code + '\')">';
-            html += '<span class="lang-flag">' + lang.flag + '</span><span class="lang-name">' + lang.name + '</span></div>';
-        }
-        html += '</div>';
-        container.innerHTML = html;
-    },
-    toggleSwitcher: function() {
-        const dropdown = document.getElementById('lang-dropdown');
-        if (dropdown) {
-            const isOpen = dropdown.style.display === 'block';
-            dropdown.style.display = isOpen ? 'none' : 'block';
-            document.querySelector('.lang-current').classList.toggle('open', !isOpen);
-        }
-    }
+var I18n={current:'ru',languages:{ru:{name:'Русский',flag:'🇷🇺'},en:{name:'English',flag:'🇬🇧'},de:{name:'Deutsch',flag:'🇩🇪'},fr:{name:'Français',flag:'🇫🇷'},it:{name:'Italiano',flag:'🇮🇹'},es:{name:'Español',flag:'🇪🇸'},pt:{name:'Português',flag:'🇧🇷'},zh:{name:'中文',flag:'🇨🇳'},ja:{name:'日本語',flag:'🇯🇵'},ko:{name:'한국어',flag:'🇰🇷'}},init:function(){var t=this.getSavedLanguage()||this.getBrowserLanguage();this.languages[t]||(t='en'),this.setLanguage(t),this.renderSwitcher()},getSavedLanguage:function(){return localStorage.getItem('cs_lang')},getBrowserLanguage:function(){return(navigator.language||navigator.userLanguage||'en').split('-')[0]},setLanguage:function(t){this.current=t,localStorage.setItem('cs_lang',t),document.documentElement.lang=t,document.querySelectorAll('[data-i18n]').forEach(function(e){var n=e.getAttribute('data-i18n');DocTranslations[t]&&DocTranslations[t][n]&&(e.textContent=DocTranslations[t][n])}),document.querySelectorAll('[data-i18n-html]').forEach(function(e){var n=e.getAttribute('data-i18n-html');DocTranslations[t]&&DocTranslations[t][n]&&(e.innerHTML=DocTranslations[t][n])}),document.querySelectorAll('.lang-option').forEach(function(e){e.classList.toggle('active',e.getAttribute('data-lang')===t)});var e=document.querySelector('.lang-current span');e&&this.languages[t]&&(e.textContent=this.languages[t].flag+' '+this.languages[t].name)},renderSwitcher:function(){var t=document.getElementById('lang-switcher');if(!t)return;var e=this.languages[this.current]||this.languages.en,n='<div class="lang-current" onclick="I18n.toggleSwitcher()"><span>'+e.flag+' '+e.name+'</span><svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div><div class="lang-dropdown" id="lang-dropdown" style="display:none;">';for(var a in this.languages){var i=this.languages[a],o=a===this.current?' active':'';n+='<div class="lang-option'+o+'" data-lang="'+a+'" onclick="I18n.setLanguage(\''+a+'\')"><span>'+i.flag+' '+i.name+'</span></div>'}n+='</div>',t.innerHTML=n},toggleSwitcher:function(){var t=document.getElementById('lang-dropdown'),e=document.querySelector('.lang-current');if(t){var n='block'===t.style.display;t.style.display=n?'none':'block',e&&e.classList.toggle('open',!n)}},closeDropdown:function(){var t=document.getElementById('lang-dropdown'),e=document.querySelector('.lang-current');t&&(t.style.display='none'),e&&e.classList.remove('open')}};
+document.addEventListener('click',function(t){t.target.closest('#lang-switcher')||I18n.closeDropdown()});
+
+var DocTranslations={
+
+ru:{refund_title:'Политика возврата средств | Cyber Security PRO',refund_s1_title:'1. Условия возврата',refund_s1_p1:'Возврат возможен при соблюдении следующих условий:',refund_s1_li1:'С момента покупки прошло не более 7 календарных дней.',refund_s1_li2:'Лицензионный ключ не был активирован ни на одном сайте.',refund_s1_p2:'Правообладатель может запросить дополнительную информацию.',refund_s2_title:'2. Порядок оформления возврата',refund_s2_p1:'Для оформления возврата необходимо:',refund_s2_li1:'Направить запрос через <a href="../contact">страницу контактов</a> с темой «Возврат средств».',refund_s2_li2:'Указать email и лицензионный ключ.',refund_s2_p2:'Запрос рассматривается 5 рабочих дней. Возврат — 10 рабочих дней.',refund_s3_title:'3. Случаи, в которых возврат невозможен',refund_s3_p1:'Возврат не производится если:',refund_s3_li1:'Ключ был активирован на сайте.',refund_s3_li2:'Прошло более 7 дней с момента покупки.',refund_s3_li3:'Запрос не содержит достаточно информации.',refund_s3_li4:'Для тарифа «PRO Навсегда» прошло более 30 дней с активации.',refund_s4_title:'4. Особые условия для тарифа «PRO Навсегда»',refund_s4_p1:'Расширенный срок возврата — 30 дней с момента активации, если функциональность не соответствует заявленной.',refund_s5_title:'5. Заключительные положения',refund_s5_p1:'Политика является частью Публичной оферты. Изменения вступают в силу с момента публикации.',refund_s5_p2:'Возврат регулируется Политикой, действовавшей на момент покупки.',back_home:'← На главную'},
+
+en:{refund_title:'Refund Policy | Cyber Security PRO',refund_s1_title:'1. Refund Conditions',refund_s1_p1:'A refund is possible if all of the following conditions are met:',refund_s1_li1:'No more than 7 calendar days have passed since purchase.',refund_s1_li2:'The license key has not been activated on any website.',refund_s1_p2:'The Rights Holder may request additional verification information.',refund_s2_title:'2. Refund Procedure',refund_s2_p1:'To request a refund:',refund_s2_li1:'Send a request via the <a href="../contact">contact page</a> with the subject "Refund".',refund_s2_li2:'Include the email used for purchase and the license key.',refund_s2_p2:'Request reviewed within 5 business days. Refund processed within 10 business days.',refund_s3_title:'3. Non-Refundable Cases',refund_s3_p1:'Refund is not available if:',refund_s3_li1:'The license key has been activated on any website.',refund_s3_li2:'More than 7 calendar days have passed since purchase.',refund_s3_li3:'The request lacks sufficient information.',refund_s3_li4:'For "PRO Lifetime" plan — more than 30 days have passed since activation.',refund_s4_title:'4. Special Conditions for "PRO Lifetime"',refund_s4_p1:'Extended 30-day refund period from activation if the software functionality did not match what was stated on the Site.',refund_s5_title:'5. Final Provisions',refund_s5_p1:'This Policy is an integral part of the Terms of Service. Changes take effect upon publication.',refund_s5_p2:'Refunds are governed by the Policy in effect at the time of purchase.',back_home:'← Back to Home'},
+
+de:{refund_title:'Widerrufsrecht | Cyber Security PRO',refund_s1_title:'1. Rückerstattungsbedingungen',refund_s1_p1:'Rückerstattung möglich wenn:',refund_s1_li1:'Nicht mehr als 7 Kalendertage seit Kauf.',refund_s1_li2:'Lizenzschlüssel wurde auf keiner Website aktiviert.',refund_s1_p2:'Zusätzliche Informationen können angefordert werden.',refund_s2_title:'2. Rückerstattungsverfahren',refund_s2_p1:'Zur Beantragung:',refund_s2_li1:'Anfrage über die <a href="../contact">Kontaktseite</a> mit Betreff "Rückerstattung".',refund_s2_li2:'Kauf-E-Mail und Lizenzschlüssel angeben.',refund_s2_p2:'Prüfung innerhalb 5 Werktagen. Rückerstattung innerhalb 10 Werktagen.',refund_s3_title:'3. Nicht erstattungsfähige Fälle',refund_s3_p1:'Keine Rückerstattung wenn:',refund_s3_li1:'Schlüssel wurde auf einer Website aktiviert.',refund_s3_li2:'Mehr als 7 Tage seit Kauf vergangen.',refund_s3_li3:'Anfrage enthält nicht genügend Informationen.',refund_s3_li4:'Bei "PRO Lifetime" — mehr als 30 Tage seit Aktivierung.',refund_s4_title:'4. Besondere Bedingungen für "PRO Lifetime"',refund_s4_p1:'Verlängerte 30-Tage-Frist ab Aktivierung, wenn die Funktionalität nicht der Beschreibung entsprach.',refund_s5_title:'5. Schlussbestimmungen',refund_s5_p1:'Diese Richtlinie ist Teil der AGB. Änderungen treten mit Veröffentlichung in Kraft.',refund_s5_p2:'Rückerstattung nach der zum Kaufzeitpunkt geltenden Richtlinie.',back_home:'← Zur Startseite'},
+
+fr:{refund_title:'Politique de remboursement | Cyber Security PRO',refund_s1_title:'1. Conditions de remboursement',refund_s1_p1:'Remboursement possible si:',refund_s1_li1:'Pas plus de 7 jours calendaires depuis l\'achat.',refund_s1_li2:'La clé n\'a pas été activée sur un site.',refund_s1_p2:'Des informations supplémentaires peuvent être demandées.',refund_s2_title:'2. Procédure de remboursement',refund_s2_p1:'Pour demander un remboursement:',refund_s2_li1:'Envoyez une demande via la <a href="../contact">page de contact</a> avec le sujet "Remboursement".',refund_s2_li2:'Indiquez l\'email d\'achat et la clé de licence.',refund_s2_p2:'Examen sous 5 jours ouvrés. Remboursement sous 10 jours ouvrés.',refund_s3_title:'3. Cas de non-remboursement',refund_s3_p1:'Remboursement impossible si:',refund_s3_li1:'La clé a été activée sur un site.',refund_s3_li2:'Plus de 7 jours se sont écoulés depuis l\'achat.',refund_s3_li3:'La demande manque d\'informations.',refund_s3_li4:'Pour "PRO À vie" — plus de 30 jours depuis l\'activation.',refund_s4_title:'4. Conditions spéciales pour "PRO À vie"',refund_s4_p1:'Délai prolongé de 30 jours après activation si la fonctionnalité ne correspondait pas à la description.',refund_s5_title:'5. Dispositions finales',refund_s5_p1:'Cette politique fait partie des Conditions générales.',refund_s5_p2:'Remboursement selon la politique en vigueur au moment de l\'achat.',back_home:'← Retour à l\'accueil'},
+
+it:{refund_title:'Politica di rimborso | Cyber Security PRO',refund_s1_title:'1. Condizioni di rimborso',refund_s1_p1:'Rimborso possibile se:',refund_s1_li1:'Non più di 7 giorni dall\'acquisto.',refund_s1_li2:'La chiave non è stata attivata su alcun sito.',refund_s1_p2:'Potrebbero essere richieste informazioni aggiuntive.',refund_s2_title:'2. Procedura di rimborso',refund_s2_p1:'Per richiedere il rimborso:',refund_s2_li1:'Invia una richiesta via <a href="../contact">pagina contatti</a> con oggetto "Rimborso".',refund_s2_li2:'Indica email di acquisto e chiave di licenza.',refund_s2_p2:'Esame entro 5 giorni lavorativi. Rimborso entro 10 giorni lavorativi.',refund_s3_title:'3. Casi di non rimborsabilità',refund_s3_p1:'Rimborso non possibile se:',refund_s3_li1:'La chiave è stata attivata su un sito.',refund_s3_li2:'Sono passati più di 7 giorni dall\'acquisto.',refund_s3_li3:'La richiesta manca di informazioni.',refund_s3_li4:'Per "PRO A vita" — più di 30 giorni dall\'attivazione.',refund_s4_title:'4. Condizioni speciali per "PRO A vita"',refund_s4_p1:'Termine esteso di 30 giorni dall\'attivazione se la funzionalità non corrispondeva alla descrizione.',refund_s5_title:'5. Disposizioni finali',refund_s5_p1:'Questa politica fa parte dei Termini di servizio.',refund_s5_p2:'Rimborso secondo la politica in vigore al momento dell\'acquisto.',back_home:'← Torna alla home'},
+
+es:{refund_title:'Política de reembolso | Cyber Security PRO',refund_s1_title:'1. Condiciones de reembolso',refund_s1_p1:'Reembolso posible si:',refund_s1_li1:'No más de 7 días desde la compra.',refund_s1_li2:'La clave no ha sido activada en ningún sitio.',refund_s1_p2:'Se puede solicitar información adicional.',refund_s2_title:'2. Procedimiento de reembolso',refund_s2_p1:'Para solicitar reembolso:',refund_s2_li1:'Envíe una solicitud a través de la <a href="../contact">página de contacto</a> con el asunto "Reembolso".',refund_s2_li2:'Indique el email de compra y la clave de licencia.',refund_s2_p2:'Revisión en 5 días hábiles. Reembolso en 10 días hábiles.',refund_s3_title:'3. Casos sin reembolso',refund_s3_p1:'No hay reembolso si:',refund_s3_li1:'La clave fue activada en un sitio.',refund_s3_li2:'Han pasado más de 7 días desde la compra.',refund_s3_li3:'La solicitud carece de información suficiente.',refund_s3_li4:'Para "PRO Vitalicio" — más de 30 días desde la activación.',refund_s4_title:'4. Condiciones especiales para "PRO Vitalicio"',refund_s4_p1:'Plazo ampliado de 30 días desde la activación si la funcionalidad no coincidía con lo declarado.',refund_s5_title:'5. Disposiciones finales',refund_s5_p1:'Esta política es parte de los Términos de servicio.',refund_s5_p2:'Reembolso según la política vigente al momento de la compra.',back_home:'← Volver al inicio'},
+
+pt:{refund_title:'Política de reembolso | Cyber Security PRO',refund_s1_title:'1. Condições de reembolso',refund_s1_p1:'Reembolso possível se:',refund_s1_li1:'Não mais de 7 dias desde a compra.',refund_s1_li2:'A chave não foi ativada em nenhum site.',refund_s1_p2:'Informações adicionais podem ser solicitadas.',refund_s2_title:'2. Procedimento de reembolso',refund_s2_p1:'Para solicitar reembolso:',refund_s2_li1:'Envie uma solicitação via <a href="../contact">página de contato</a> com o assunto "Reembolso".',refund_s2_li2:'Indique o email de compra e a chave de licença.',refund_s2_p2:'Análise em 5 dias úteis. Reembolso em 10 dias úteis.',refund_s3_title:'3. Casos sem reembolso',refund_s3_p1:'Sem reembolso se:',refund_s3_li1:'A chave foi ativada em um site.',refund_s3_li2:'Mais de 7 dias desde a compra.',refund_s3_li3:'A solicitação não contém informações suficientes.',refund_s3_li4:'Para "PRO Vitalício" — mais de 30 dias desde a ativação.',refund_s4_title:'4. Condições especiais para "PRO Vitalício"',refund_s4_p1:'Prazo estendido de 30 dias após ativação se a funcionalidade não correspondia ao declarado.',refund_s5_title:'5. Disposições finais',refund_s5_p1:'Esta política faz parte dos Termos de serviço.',refund_s5_p2:'Reembolso conforme a política vigente no momento da compra.',back_home:'← Voltar ao início'},
+
+zh:{refund_title:'退款政策 | Cyber Security PRO',refund_s1_title:'1. 退款条件',refund_s1_p1:'满足以下条件可退款：',refund_s1_li1:'购买后不超过7个日历日。',refund_s1_li2:'密钥未在任何网站上激活。',refund_s1_p2:'可能要求提供额外信息。',refund_s2_title:'2. 退款程序',refund_s2_p1:'申请退款：',refund_s2_li1:'通过<a href="../contact">联系页面</a>发送请求，主题为"退款"。',refund_s2_li2:'提供购买邮箱和许可证密钥。',refund_s2_p2:'5个工作日内审核。10个工作日内退款。',refund_s3_title:'3. 不可退款情况',refund_s3_p1:'以下情况不退款：',refund_s3_li1:'密钥已在网站上激活。',refund_s3_li2:'购买已超过7天。',refund_s3_li3:'请求信息不足。',refund_s3_li4:'"永久PRO"—激活超过30天。',refund_s4_title:'4. "永久PRO"特别条件',refund_s4_p1:'如果功能与描述不符，激活后30天内可退款。',refund_s5_title:'5. 最后条款',refund_s5_p1:'本政策是服务条款的组成部分。',refund_s5_p2:'退款按购买时有效的政策执行。',back_home:'← 返回首页'},
+
+ja:{refund_title:'返金ポリシー | Cyber Security PRO',refund_s1_title:'1. 返金条件',refund_s1_p1:'以下の条件を満たす場合に返金可能：',refund_s1_li1:'購入から7暦日以内。',refund_s1_li2:'キーがどのサイトでもアクティベートされていない。',refund_s1_p2:'追加情報の提供を求める場合があります。',refund_s2_title:'2. 返金手続き',refund_s2_p1:'返金を申請するには：',refund_s2_li1:'<a href="../contact">お問い合わせページ</a>から件名「返金」でリクエスト。',refund_s2_li2:'購入メールアドレスとライセンスキーを記載。',refund_s2_p2:'5営業日以内に審査。10営業日以内に返金。',refund_s3_title:'3. 返金不可の場合',refund_s3_p1:'以下の場合返金不可：',refund_s3_li1:'キーがサイトでアクティベートされた。',refund_s3_li2:'購入から7日以上経過。',refund_s3_li3:'リクエストに十分な情報がない。',refund_s3_li4:'「PRO永久」—アクティベーションから30日以上経過。',refund_s4_title:'4. 「PRO永久」の特別条件',refund_s4_p1:'機能が説明と一致しなかった場合、アクティベーションから30日間延長返金可能。',refund_s5_title:'5. 最終条項',refund_s5_p1:'本ポリシーは利用規約の一部です。',refund_s5_p2:'返金は購入時点で有効なポリシーに従います。',back_home:'← ホームに戻る'},
+
+ko:{refund_title:'환불 정책 | Cyber Security PRO',refund_s1_title:'1. 환불 조건',refund_s1_p1:'다음 조건 충족 시 환불 가능:',refund_s1_li1:'구매 후 7일 이내.',refund_s1_li2:'키가 어떤 사이트에서도 활성화되지 않음.',refund_s1_p2:'추가 정보를 요청할 수 있습니다.',refund_s2_title:'2. 환불 절차',refund_s2_p1:'환불 요청:',refund_s2_li1:'<a href="../contact">문의 페이지</a>를 통해 "환불" 제목으로 요청.',refund_s2_li2:'구매 이메일과 라이선스 키를 기재.',refund_s2_p2:'5영업일 이내 검토. 10영업일 이내 환불.',refund_s3_title:'3. 환불 불가 사유',refund_s3_p1:'다음 경우 환불 불가:',refund_s3_li1:'키가 사이트에서 활성화됨.',refund_s3_li2:'구매 후 7일 이상 경과.',refund_s3_li3:'요청 정보가 충분하지 않음.',refund_s3_li4:'"PRO 평생" — 활성화 후 30일 이상 경과.',refund_s4_title:'4. "PRO 평생" 특별 조건',refund_s4_p1:'기능이 설명과 일치하지 않는 경우 활성화 후 30일 연장 환불 가능.',refund_s5_title:'5. 최종 조항',refund_s5_p1:'본 정책은 이용약관의 일부입니다.',refund_s5_p2:'환불은 구매 시점의 정책을 따릅니다.',back_home:'← 홈으로'}
+
 };
 
-document.addEventListener('click', function(e) {
-    if (!e.target.closest('#lang-switcher')) {
-        const dropdown = document.getElementById('lang-dropdown');
-        if (dropdown) dropdown.style.display = 'none';
-        document.querySelector('.lang-current')?.classList.remove('open');
-    }
-});
-
-const DocTranslations = {
-    ru: {
-        refund_title: 'Политика возврата средств | Cyber Security PRO',
-        refund_s1_title: 'Условия возврата',
-        refund_s1_p1: 'Возврат денежных средств возможен при одновременном соблюдении следующих условий:',
-        refund_s1_li1: 'С момента приобретения лицензии прошло не более 7 (семи) календарных дней',
-        refund_s1_li2: 'Лицензионный ключ не был активирован на сайте',
-        refund_s2_title: 'Порядок оформления возврата',
-        refund_s2_p1: 'Для оформления возврата направьте запрос на адрес <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a> с темой «Возврат средств».',
-        refund_s2_p2: 'В запросе необходимо указать:',
-        refund_s2_li1: 'Адрес электронной почты, использованный при приобретении лицензии',
-        refund_s2_li2: 'Лицензионный ключ',
-        refund_s2_p3: 'Возврат производится в течение 10 (десяти) рабочих дней с момента получения и подтверждения запроса. Средства возвращаются тем же способом, которым была произведена оплата.',
-        refund_s3_title: 'Случаи, в которых возврат невозможен',
-        refund_s3_li1: 'Лицензионный ключ был активирован на любом сайте',
-        refund_s3_li2: 'С момента приобретения прошло более 7 календарных дней',
-        refund_footer: 'Настоящая Политика является неотъемлемой частью Публичной оферты.',
-        back_home: '← На главную'
-    },
-    en: {
-        refund_title: 'Refund Policy | Cyber Security PRO',
-        refund_s1_title: 'Refund Conditions',
-        refund_s1_p1: 'A refund is possible if all of the following conditions are met:',
-        refund_s1_li1: 'No more than 7 (seven) calendar days have passed since the license purchase',
-        refund_s1_li2: 'The license key has not been activated on any website',
-        refund_s2_title: 'How to Request a Refund',
-        refund_s2_p1: 'To request a refund, send an email to <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a> with the subject "Refund".',
-        refund_s2_p2: 'The request must include:',
-        refund_s2_li1: 'Email address used for the license purchase',
-        refund_s2_li2: 'License key',
-        refund_s2_p3: 'The refund is processed within 10 (ten) business days from the receipt and confirmation of the request. Funds are returned using the same method used for payment.',
-        refund_s3_title: 'Cases Where Refund is Not Possible',
-        refund_s3_li1: 'The license key has been activated on any website',
-        refund_s3_li2: 'More than 7 calendar days have passed since the purchase',
-        refund_footer: 'This Policy is an integral part of the Terms of Service.',
-        back_home: '← Back to Home'
-    },
-    de: {
-        refund_title: 'Widerrufsrecht | Cyber Security PRO',
-        refund_s1_title: 'Rückerstattungsbedingungen',
-        refund_s1_p1: 'Eine Rückerstattung ist möglich, wenn alle folgenden Bedingungen erfüllt sind:',
-        refund_s1_li1: 'Seit dem Lizenzerwerb sind nicht mehr als 7 Kalendertage vergangen',
-        refund_s1_li2: 'Der Lizenzschlüssel wurde auf keiner Website aktiviert',
-        refund_s2_title: 'Rückerstattung beantragen',
-        refund_s2_p1: 'Senden Sie eine E-Mail an <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a> mit dem Betreff "Rückerstattung".',
-        refund_s2_p2: 'Die Anfrage muss enthalten:',
-        refund_s2_li1: 'E-Mail-Adresse beim Lizenzerwerb',
-        refund_s2_li2: 'Lizenzschlüssel',
-        refund_s2_p3: 'Die Rückerstattung erfolgt innerhalb von 10 Werktagen nach Eingang und Bestätigung der Anfrage.',
-        refund_s3_title: 'Fälle ohne Rückerstattung',
-        refund_s3_li1: 'Der Lizenzschlüssel wurde auf einer Website aktiviert',
-        refund_s3_li2: 'Seit dem Kauf sind mehr als 7 Kalendertage vergangen',
-        refund_footer: 'Diese Richtlinie ist integraler Bestandteil der AGB.',
-        back_home: '← Zur Startseite'
-    },
-    fr: {
-        refund_title: 'Politique de remboursement | Cyber Security PRO',
-        refund_s1_title: 'Conditions de remboursement',
-        refund_s1_p1: 'Un remboursement est possible si toutes les conditions suivantes sont remplies :',
-        refund_s1_li1: 'Pas plus de 7 jours calendaires depuis l\'achat',
-        refund_s1_li2: 'La clé n\'a pas été activée sur un site',
-        refund_s2_title: 'Comment demander un remboursement',
-        refund_s2_p1: 'Envoyez un email à <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a> avec le sujet "Remboursement".',
-        refund_s2_p2: 'La demande doit inclure :',
-        refund_s2_li1: 'Adresse email utilisée pour l\'achat',
-        refund_s2_li2: 'Clé de licence',
-        refund_s2_p3: 'Le remboursement est effectué sous 10 jours ouvrés.',
-        refund_s3_title: 'Cas de non-remboursement',
-        refund_s3_li1: 'La clé a été activée sur un site',
-        refund_s3_li2: 'Plus de 7 jours se sont écoulés depuis l\'achat',
-        refund_footer: 'Cette politique fait partie intégrante des conditions générales.',
-        back_home: "← Retour à l'accueil"
-    },
-    it: {
-        refund_title: 'Politica di rimborso | Cyber Security PRO',
-        refund_s1_title: 'Condizioni di rimborso',
-        refund_s1_p1: 'Il rimborso è possibile se tutte le seguenti condizioni sono soddisfatte:',
-        refund_s1_li1: 'Non più di 7 giorni dall\'acquisto',
-        refund_s1_li2: 'La chiave non è stata attivata su alcun sito',
-        refund_s2_title: 'Come richiedere il rimborso',
-        refund_s2_p1: 'Invia un\'email a <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a> con oggetto "Rimborso".',
-        refund_s2_p2: 'La richiesta deve includere:',
-        refund_s2_li1: 'Email usata per l\'acquisto',
-        refund_s2_li2: 'Chiave di licenza',
-        refund_s2_p3: 'Il rimborso viene elaborato entro 10 giorni lavorativi.',
-        refund_s3_title: 'Casi di non rimborsabilità',
-        refund_s3_li1: 'La chiave è stata attivata su un sito',
-        refund_s3_li2: 'Sono passati più di 7 giorni dall\'acquisto',
-        refund_footer: 'Questa politica è parte integrante dei Termini di Servizio.',
-        back_home: '← Torna alla home'
-    },
-    es: {
-        refund_title: 'Política de reembolso | Cyber Security PRO',
-        refund_s1_title: 'Condiciones de reembolso',
-        refund_s1_p1: 'El reembolso es posible si se cumplen todas las condiciones siguientes:',
-        refund_s1_li1: 'No más de 7 días desde la compra',
-        refund_s1_li2: 'La clave no ha sido activada en ningún sitio',
-        refund_s2_title: 'Cómo solicitar un reembolso',
-        refund_s2_p1: 'Envíe un correo a <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a> con el asunto "Reembolso".',
-        refund_s2_p2: 'La solicitud debe incluir:',
-        refund_s2_li1: 'Email usado en la compra',
-        refund_s2_li2: 'Clave de licencia',
-        refund_s2_p3: 'El reembolso se procesa en 10 días hábiles.',
-        refund_s3_title: 'Casos sin reembolso',
-        refund_s3_li1: 'La clave fue activada en un sitio',
-        refund_s3_li2: 'Han pasado más de 7 días desde la compra',
-        refund_footer: 'Esta política es parte integral de los Términos de Servicio.',
-        back_home: '← Volver al inicio'
-    },
-    pt: {
-        refund_title: 'Política de reembolso | Cyber Security PRO',
-        refund_s1_title: 'Condições de reembolso',
-        refund_s1_p1: 'O reembolso é possível se todas as condições seguintes forem atendidas:',
-        refund_s1_li1: 'Não mais de 7 dias desde a compra',
-        refund_s1_li2: 'A chave não foi ativada em nenhum site',
-        refund_s2_title: 'Como solicitar reembolso',
-        refund_s2_p1: 'Envie um email para <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a> com assunto "Reembolso".',
-        refund_s2_p2: 'O pedido deve incluir:',
-        refund_s2_li1: 'Email usado na compra',
-        refund_s2_li2: 'Chave de licença',
-        refund_s2_p3: 'O reembolso é processado em 10 dias úteis.',
-        refund_s3_title: 'Casos sem reembolso',
-        refund_s3_li1: 'A chave foi ativada em um site',
-        refund_s3_li2: 'Mais de 7 dias desde a compra',
-        refund_footer: 'Esta política é parte integrante dos Termos de Serviço.',
-        back_home: '← Voltar ao início'
-    },
-    zh: {
-        refund_title: '退款政策 | Cyber Security PRO',
-        refund_s1_title: '退款条件',
-        refund_s1_p1: '满足以下所有条件时可退款：',
-        refund_s1_li1: '购买后不超过7个日历日',
-        refund_s1_li2: '密钥未在任何网站上激活',
-        refund_s2_title: '如何申请退款',
-        refund_s2_p1: '发送邮件至 <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>，主题为"退款"。',
-        refund_s2_p2: '申请需包含：',
-        refund_s2_li1: '购买时使用的邮箱',
-        refund_s2_li2: '许可证密钥',
-        refund_s2_p3: '退款在10个工作日内处理。',
-        refund_s3_title: '不可退款的情况',
-        refund_s3_li1: '密钥已在网站上激活',
-        refund_s3_li2: '购买已超过7个日历日',
-        refund_footer: '本政策是服务条款的组成部分。',
-        back_home: '← 返回首页'
-    },
-    ja: {
-        refund_title: '返金ポリシー | Cyber Security PRO',
-        refund_s1_title: '返金条件',
-        refund_s1_p1: '以下のすべての条件を満たす場合、返金が可能です：',
-        refund_s1_li1: '購入から7暦日以内',
-        refund_s1_li2: 'キーがどのサイトでもアクティベートされていない',
-        refund_s2_title: '返金の申請方法',
-        refund_s2_p1: '件名を「返金」として<a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>にメールしてください。',
-        refund_s2_p2: '申請に含めるもの：',
-        refund_s2_li1: '購入時に使用したメールアドレス',
-        refund_s2_li2: 'ライセンスキー',
-        refund_s2_p3: '返金は申請確認から10営業日以内に処理されます。',
-        refund_s3_title: '返金不可の場合',
-        refund_s3_li1: 'キーがサイトでアクティベートされた',
-        refund_s3_li2: '購入から7暦日以上経過',
-        refund_footer: 'このポリシーは利用規約の一部です。',
-        back_home: '← ホームに戻る'
-    },
-    ko: {
-        refund_title: '환불 정책 | Cyber Security PRO',
-        refund_s1_title: '환불 조건',
-        refund_s1_p1: '다음 조건이 모두 충족되면 환불이 가능합니다:',
-        refund_s1_li1: '구매 후 7일 이내',
-        refund_s1_li2: '키가 어떤 사이트에서도 활성화되지 않음',
-        refund_s2_title: '환불 요청 방법',
-        refund_s2_p1: '"환불" 제목으로 <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a>에 이메일을 보내세요.',
-        refund_s2_p2: '요청에 포함할 내용:',
-        refund_s2_li1: '구매 시 사용한 이메일',
-        refund_s2_li2: '라이선스 키',
-        refund_s2_p3: '환불은 요청 확인 후 10영업일 이내에 처리됩니다.',
-        refund_s3_title: '환불 불가 사유',
-        refund_s3_li1: '키가 사이트에서 활성화됨',
-        refund_s3_li2: '구매 후 7일 이상 경과',
-        refund_footer: '본 정책은 이용약관의 일부입니다.',
-        back_home: '← 홈으로'
-    }
-};
-
-for (let lang in DocTranslations) {
-    if (lang === 'en') continue;
-    for (let key in DocTranslations.en) {
-        if (!DocTranslations[lang][key]) {
-            DocTranslations[lang][key] = DocTranslations.en[key];
-        }
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() { I18n.init(); });
+for(var lang in DocTranslations){if(lang==='en')continue;for(var key in DocTranslations.en){if(!DocTranslations[lang][key])DocTranslations[lang][key]=DocTranslations.en[key]}}
+document.addEventListener('DOMContentLoaded',function(){I18n.init()});
 </script>
 </body>
 </html>
