@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Security PRO — Защита WordPress от ботов и атак</title>
-    <meta name="description" content="Комплексная защита WordPress: блокировка ботов, брутфорс-атак, AI-скрапинга, DDoS.">
+    <title>Cyber Security PRO — Защита WordPress от ботов, атак и взлома</title>
+    <meta name="description" content="Комплексная защита WordPress: блокировка ботов, брутфорс-атак, AI-скрапинга, DDoS. 30+ методов. Бесплатная и PRO версия. 10 языков.">
+    <meta name="keywords" content="wordpress security, защита wordpress, плагин безопасности, firewall, bot protection, brute force, ddos protection, wordpress plugin">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cyber Security PRO — Защита WordPress">
+    <meta property="og:description" content="Комплексная защита WordPress от ботов, брутфорса, AI-скрапинга и DDoS-атак. 30+ методов. 10 языков.">
+    <meta property="og:image" content="https://gataurus.github.io/cyber-security/icon-512x512.png">
+    <meta property="og:url" content="https://gataurus.github.io/cyber-security/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cyber Security PRO — Защита WordPress">
+    <meta name="twitter:description" content="Комплексная защита WordPress от ботов, брутфорса, AI-скрапинга и DDoS-атак.">
+    <meta name="twitter:image" content="https://gataurus.github.io/cyber-security/icon-512x512.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gataurus.github.io/cyber-security/">
+    
+    <!-- Языки -->
+    <link rel="alternate" hreflang="ru" href="https://gataurus.github.io/cyber-security/">
+    <link rel="alternate" hreflang="en" href="https://gataurus.github.io/cyber-security/">
+    <link rel="alternate" hreflang="de" href="https://gataurus.github.io/cyber-security/">
+    <link rel="alternate" hreflang="x-default" href="https://gataurus.github.io/cyber-security/">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Cyber Security PRO",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "WordPress",
+        "description": "Комплексная защита WordPress от ботов, брутфорс-атак, AI-скрапинга и DDoS.",
+        "offers": {
+            "@type": "Offer",
+            "price": "990",
+            "priceCurrency": "RUB"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Gataurus"
+        }
+    }
+    </script>
+    
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="512x512" href="icon-512x512.png">
-    <meta property="og:image" content="icon-512x512.png">
+    
     <link rel="stylesheet" href="css/style.css">
     <script src="js/translations.js"></script>
     <script src="js/i18n.js"></script>
@@ -20,7 +65,7 @@
 <section class="hero">
     <div class="container">
         <div class="hero-logo">
-            <span class="hero-shield">🛡️</span>
+            <span class="hero-shield" aria-label="Shield">🛡️</span>
             <span class="hero-brand">Cyber Security</span>
             <span class="hero-badge-pro">PRO</span>
         </div>
@@ -48,14 +93,14 @@
         <h2 class="section-title" data-i18n="threats_title">От каких угроз защищает Cyber Security</h2>
         <p class="section-subtitle" data-i18n="threats_subtitle">Ваш WordPress-сайт атакуют каждый день — боты, сканеры, хакеры. Плагин блокирует угрозы автоматически, без вашего участия.</p>
         <div class="threats-grid">
-            <div class="threat-card"><div class="threat-icon">🤖</div><h3 data-i18n="threat1_title">Боты и сканеры уязвимостей</h3><p data-i18n="threat1_desc">Автоматические программы круглосуточно сканируют сайты в поисках уязвимых мест: wp-login.php, xmlrpc.php, .env, .git, wp-config.php. Плагин определяет их по User-Agent, HTTP-заголовкам и поведению — и блокирует до того, как они доберутся до файлов.</p></div>
-            <div class="threat-card"><div class="threat-icon">🔑</div><h3 data-i18n="threat2_title">Брутфорс-атаки (подбор паролей)</h3><p data-i18n="threat2_desc">Хакеры перебирают тысячи паролей в минуту к wp-login.php и XML-RPC. Плагин отслеживает попытки входа и при превышении лимита навсегда блокирует всю подсеть /24 нарушителя.</p></div>
-            <div class="threat-card"><div class="threat-icon">🧠</div><h3 data-i18n="threat3_title">AI-скрапинг контента</h3><p data-i18n="threat3_desc">GPTBot (OpenAI), Claude (Anthropic), PerplexityBot, Google-Extended, Bytespider и другие AI-боты собирают ваш контент для обучения моделей. Плагин распознаёт и блокирует их, не затрагивая легитимные поисковые системы.</p></div>
-            <div class="threat-card"><div class="threat-icon">☠️</div><h3 data-i18n="threat4_title">SQL-инъекции и XSS-атаки</h3><p data-i18n="threat4_desc">Злоумышленники пытаются внедрить вредоносный код через URL-параметры и формы. Плагин проверяет все входящие запросы на паттерны SQL-инъекций и межсайтового скриптинга, блокируя атаку до обработки WordPress.</p></div>
-            <div class="threat-card"><div class="threat-icon">🌊</div><h3 data-i18n="threat5_title">DDoS-атаки и флуд</h3><p data-i18n="threat5_desc">Массовые запросы перегружают сервер и кладут сайт. Три уровня защиты: Rate Limiting (ограничение запросов), DDoS Protection (продвинутая защита) и Anti-Slowloris (блокировка медленных соединений).</p></div>
-            <div class="threat-card"><div class="threat-icon">📋</div><h3 data-i18n="threat6_title">Кража контента</h3><p data-i18n="threat6_desc">Ваши статьи, изображения и код воруют конкуренты и автоматические парсеры. Защита от выделения текста, правого клика, горячих клавиш (Ctrl+C, Ctrl+U), перетаскивания изображений и встраивания в iframe.</p></div>
-            <div class="threat-card"><div class="threat-icon">🕵️</div><h3 data-i18n="threat7_title">Скрытые вредоносные файлы</h3><p data-i18n="threat7_desc">Вирусы и бэкдоры маскируются под легитимные файлы. Сканер вредоносного кода ежедневно проверяет PHP, JS, INC и TXT файлы, находит скрытые файлы, eval-вставки и base64-декодеры.</p></div>
-            <div class="threat-card"><div class="threat-icon">🔓</div><h3 data-i18n="threat8_title">Утечка данных WordPress</h3><p data-i18n="threat8_desc">Стандартный WordPress раскрывает версию, имена пользователей, список плагинов и тем. Плагин скрывает системные файлы, убирает версию из HTML и URL скриптов, блокирует прямое перечисление пользователей через REST API.</p></div>
+            <div class="threat-card"><div class="threat-icon" aria-label="Bot">🤖</div><h3 data-i18n="threat1_title">Боты и сканеры уязвимостей</h3><p data-i18n="threat1_desc">Автоматические программы круглосуточно сканируют сайты в поисках уязвимых мест: wp-login.php, xmlrpc.php, .env, .git, wp-config.php. Плагин определяет их по User-Agent, HTTP-заголовкам и поведению — и блокирует до того, как они доберутся до файлов.</p></div>
+            <div class="threat-card"><div class="threat-icon" aria-label="Key">🔑</div><h3 data-i18n="threat2_title">Брутфорс-атаки (подбор паролей)</h3><p data-i18n="threat2_desc">Хакеры перебирают тысячи паролей в минуту к wp-login.php и XML-RPC. Плагин отслеживает попытки входа и при превышении лимита навсегда блокирует всю подсеть /24 нарушителя.</p></div>
+            <div class="threat-card"><div class="threat-icon" aria-label="AI">🧠</div><h3 data-i18n="threat3_title">AI-скрапинг контента</h3><p data-i18n="threat3_desc">GPTBot (OpenAI), Claude (Anthropic), PerplexityBot, Google-Extended, Bytespider и другие AI-боты собирают ваш контент для обучения моделей. Плагин распознаёт и блокирует их, не затрагивая легитимные поисковые системы.</p></div>
+            <div class="threat-card"><div class="threat-icon" aria-label="Skull">☠️</div><h3 data-i18n="threat4_title">SQL-инъекции и XSS-атаки</h3><p data-i18n="threat4_desc">Злоумышленники пытаются внедрить вредоносный код через URL-параметры и формы. Плагин проверяет все входящие запросы на паттерны SQL-инъекций и межсайтового скриптинга, блокируя атаку до обработки WordPress.</p></div>
+            <div class="threat-card"><div class="threat-icon" aria-label="Wave">🌊</div><h3 data-i18n="threat5_title">DDoS-атаки и флуд</h3><p data-i18n="threat5_desc">Массовые запросы перегружают сервер и кладут сайт. Три уровня защиты: Rate Limiting (ограничение запросов), DDoS Protection (продвинутая защита) и Anti-Slowloris (блокировка медленных соединений).</p></div>
+            <div class="threat-card"><div class="threat-icon" aria-label="Clipboard">📋</div><h3 data-i18n="threat6_title">Кража контента</h3><p data-i18n="threat6_desc">Ваши статьи, изображения и код воруют конкуренты и автоматические парсеры. Защита от выделения текста, правого клика, горячих клавиш (Ctrl+C, Ctrl+U), перетаскивания изображений и встраивания в iframe.</p></div>
+            <div class="threat-card"><div class="threat-icon" aria-label="Detective">🕵️</div><h3 data-i18n="threat7_title">Скрытые вредоносные файлы</h3><p data-i18n="threat7_desc">Вирусы и бэкдоры маскируются под легитимные файлы. Сканер вредоносного кода ежедневно проверяет PHP, JS, INC и TXT файлы, находит скрытые файлы, eval-вставки и base64-декодеры.</p></div>
+            <div class="threat-card"><div class="threat-icon" aria-label="Unlock">🔓</div><h3 data-i18n="threat8_title">Утечка данных WordPress</h3><p data-i18n="threat8_desc">Стандартный WordPress раскрывает версию, имена пользователей, список плагинов и тем. Плагин скрывает системные файлы, убирает версию из HTML и URL скриптов, блокирует прямое перечисление пользователей через REST API.</p></div>
         </div>
     </div>
 </section>
@@ -132,22 +177,22 @@
         <h2 class="section-title" data-i18n="why_us_title">Почему выбирают Cyber Security</h2>
         <div class="why-us-grid">
             <div class="why-us-card">
-                <div class="why-us-icon">⚡</div>
+                <div class="why-us-icon" aria-label="Lightning">⚡</div>
                 <h3 data-i18n="why_us_1_title">Мгновенная защита</h3>
                 <p data-i18n="why_us_1_desc">Плагин работает сразу после активации. Не требует настройки — все функции включены по умолчанию с оптимальными параметрами.</p>
             </div>
             <div class="why-us-card">
-                <div class="why-us-icon">🔍</div>
+                <div class="why-us-icon" aria-label="Magnifier">🔍</div>
                 <h3 data-i18n="why_us_2_title">Прозрачность</h3>
                 <p data-i18n="why_us_2_desc">Вы видите каждый заблокированный IP, причину блокировки и страну атакующего. Полные логи и статистика в реальном времени.</p>
             </div>
             <div class="why-us-card">
-                <div class="why-us-icon">🔄</div>
+                <div class="why-us-icon" aria-label="Refresh">🔄</div>
                 <h3 data-i18n="why_us_3_title">Регулярные обновления</h3>
                 <p data-i18n="why_us_3_desc">База вредоносных IP обновляется автоматически из 4 источников. Новые функции добавляются каждый месяц.</p>
             </div>
             <div class="why-us-card">
-                <div class="why-us-icon">🌐</div>
+                <div class="why-us-icon" aria-label="Globe">🌐</div>
                 <h3 data-i18n="why_us_4_title">10 языков</h3>
                 <p data-i18n="why_us_4_desc">Интерфейс переведён на русский, английский, немецкий, французский, итальянский, испанский, португальский, китайский, японский и корейский.</p>
             </div>
@@ -242,7 +287,7 @@
     <div class="container">
         <div class="cta-final-grid">
             <div class="cta-card">
-                <div class="cta-card-icon">📊</div>
+                <div class="cta-card-icon" aria-label="Chart">📊</div>
                 <h3 data-i18n="cta_stats_title">Проверенный код</h3>
                 <ul class="cta-stats-list">
                     <li><span class="cta-stat-num">15 000+</span> <span data-i18n="cta_stat_lines">строк кода</span></li>
@@ -252,7 +297,7 @@
                 </ul>
             </div>
             <div class="cta-card cta-card-guarantee">
-                <div class="cta-card-icon">🔒</div>
+                <div class="cta-card-icon" aria-label="Lock">🔒</div>
                 <h3 data-i18n="cta_guarantee_title">Ваша безопасность — наш приоритет</h3>
                 <ul class="cta-guarantee-list">
                     <li data-i18n="cta_guarantee_1">✅ 7-дневный возврат без вопросов</li>
@@ -262,7 +307,7 @@
                 </ul>
             </div>
             <div class="cta-card cta-card-action">
-                <div class="cta-card-icon">🚀</div>
+                <div class="cta-card-icon" aria-label="Rocket">🚀</div>
                 <h3 data-i18n="cta_action_title">Готовы защитить свой сайт?</h3>
                 <p data-i18n="cta_action_desc">Присоединяйтесь к пользователям WordPress, которые уже защитили свои сайты с Cyber Security PRO.</p>
                 <div class="cta-buttons">
